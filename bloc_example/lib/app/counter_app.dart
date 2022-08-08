@@ -1,4 +1,4 @@
-import 'package:bloc_example/counter/view/counter_page.dart';
+import 'package:bloc_example/view/counter/view.dart';
 import 'package:flutter/material.dart';
 
 class CounterApp extends MaterialApp {
