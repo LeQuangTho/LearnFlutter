@@ -18,8 +18,8 @@ import 'package:flutter/widgets.dart';
 // }
 
 void main() {
-  BlocOverrides.runZoned(
-    () => runApp(const InfiniteListApp()),
-    blocObserver: CounterObserver(),
-  );
+  Bloc.observer = CounterObserver();
+  // runApp(const CounterApp());
+  // runApp(const TimerApp());
+  runApp(const InfiniteListApp());
 }
