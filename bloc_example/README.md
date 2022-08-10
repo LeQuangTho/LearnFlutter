@@ -1,6 +1,8 @@
 # bloc_example
 
-A new Flutter project.
+In this branch, I learn 
+- cubit: The simplest of bloc
+- bloc
 
 ## Getting Started
 

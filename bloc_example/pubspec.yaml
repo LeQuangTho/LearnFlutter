@@ -36,8 +36,19 @@ dependencies:
   cupertino_icons: ^1.0.2
   bloc: ^8.0.3
   flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+  http: ^0.13.5
+  stream_transform: ^2.0.0
+  bloc_concurrency: ^0.2.0
+  authentication_repository:
+    path: packages/authentication_repository
+  user_repository:
+    path: packages/user_repository
+  formz: ^0.4.1
+
 
 dev_dependencies:
+  bloc_test: ^9.0.3
   flutter_test:
     sdk: flutter
 
