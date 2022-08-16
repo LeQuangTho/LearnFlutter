@@ -2,11 +2,39 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_shortcuts/flutter_shortcuts.dart';
 import 'package:http/http.dart' as http;
 import 'package:k_chart/chart_translations.dart';
 import 'package:k_chart/flutter_k_chart.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  runApp(const MyApp());
+  final FlutterShortcuts flutterShortcuts = FlutterShortcuts();
+  // String action = 'No Action';
+  flutterShortcuts.initialize(debug: true);
+  await flutterShortcuts.pushShortcutItems(
+    shortcutList: <ShortcutItem>[
+      const ShortcutItem(
+        id: "1",
+        action: 'Home page new action',
+        shortLabel: 'Home Page',
+        // icon: 'assets/icons/home.png',
+      ),
+      const ShortcutItem(
+        id: "2",
+        action: 'Bookmark page new action',
+        shortLabel: 'Bookmark Page',
+        // icon: 'assets/icons/bookmark.png',
+      ),
+      const ShortcutItem(
+        id: "3",
+        action: 'Settings Action',
+        shortLabel: 'Setting',
+        // icon: 'assets/icons/settings.png',
+      ),
+    ],
+  );
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
