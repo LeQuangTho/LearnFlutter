@@ -29,7 +29,7 @@ class MapSampleState extends State<MapSample> {
   final Completer<GoogleMapController> _controller = Completer();
 
   static const CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(37.42796133580664, -122.085749655962),
+    target: LatLng(21.0277, 105.8341),
     zoom: 14.4746,
   );
 
@@ -42,14 +42,75 @@ class MapSampleState extends State<MapSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GoogleMap(
-        mapType: MapType.normal,
-        mapToolbarEnabled: true,
-        initialCameraPosition: _kGooglePlex,
-        indoorViewEnabled: true,
-        onMapCreated: (GoogleMapController controller) {
-          _controller.complete(controller);
-        },
+      body: Stack(
+        children: [
+          GoogleMap(
+            mapType: MapType.normal,
+            mapToolbarEnabled: true,
+            initialCameraPosition: _kGooglePlex,
+            indoorViewEnabled: true,
+            onMapCreated: (GoogleMapController controller) {
+              _controller.complete(controller);
+            },
+            compassEnabled: true,
+            // liteModeEnabled: true,
+            rotateGesturesEnabled: true,
+            myLocationButtonEnabled: true,
+            buildingsEnabled: true,
+            myLocationEnabled: true,
+            tiltGesturesEnabled: true,
+            trafficEnabled: true,
+            markers: {
+              const Marker(
+                markerId: MarkerId("1"),
+                position: LatLng(21.0277, 105.8341),
+              ),
+            },
+            circles: {
+              Circle(
+                circleId: const CircleId('1'),
+                center: const LatLng(21.0277, 105.8341),
+                radius: 10,
+                strokeWidth: 1,
+                fillColor: Colors.blueAccent.withOpacity(0.2),
+                strokeColor: Colors.blueAccent,
+              ),
+            },
+            tileOverlays: {
+              const TileOverlay(
+                tileOverlayId: TileOverlayId("1"),
+              ),
+            },
+          ),
+          // Padding(
+          //   padding: const EdgeInsets.fromLTRB(15.0, 40.0, 15.0, 5.0),
+          //   child: Column(children: [
+          //     Container(
+          //       height: 50.0,
+          //       decoration: BoxDecoration(
+          //         borderRadius: BorderRadius.circular(10.0),
+          //         color: Colors.white,
+          //       ),
+          //       child: TextFormField(
+          //         // controller: searchController,
+          //         decoration: InputDecoration(
+          //           contentPadding: const EdgeInsets.symmetric(
+          //             horizontal: 20.0,
+          //             vertical: 15.0,
+          //           ),
+          //           border: InputBorder.none,
+          //           hintText: 'Search',
+          //           suffixIcon: IconButton(
+          //             onPressed: () {},
+          //             icon: const Icon(Icons.close),
+          //           ),
+          //         ),
+          //         onChanged: (value) {},
+          //       ),
+          //     )
+          //   ]),
+          // )
+        ],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _goToTheLake,
@@ -64,7 +125,8 @@ class MapSampleState extends State<MapSample> {
     // final GoogleMapController controller = await _controller.future;
     // controller.animateCamera(CameraUpdate.newCameraPosition(_kLake));
     Dio dio = Dio();
-    var res = await dio.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json",
+    var res = await dio.get(
+        "https://maps.googleapis.com/maps/api/place/nearbysearch/json",
         queryParameters: {
           // keyword=cruise
           // &location=-33.8670522%2C151.1957362
