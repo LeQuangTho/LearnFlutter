@@ -1,16 +1,33 @@
+import 'dart:math';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
+import 'package:test_game/fire_base_database.dart';
+import 'package:test_game/firebase_options.dart';
+import 'package:test_game/get_it.dart';
 import 'package:test_game/racing_game.dart';
+import 'package:test_game/theme.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  setup();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]).then((_) {
+    runApp(const MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,55 +49,45 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final theme = ThemeData(
-    textTheme: TextTheme(
-      headline1: GoogleFonts.vt323(
-        fontSize: 35,
-        color: Colors.white,
-      ),
-      button: GoogleFonts.vt323(
-        fontSize: 30,
-        fontWeight: FontWeight.w500,
-      ),
-      bodyText1: GoogleFonts.vt323(
-        fontSize: 28,
-        color: Colors.grey,
-      ),
-      bodyText2: GoogleFonts.vt323(
-        fontSize: 18,
-        color: Colors.grey,
-      ),
-    ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        primary: Colors.black,
-        minimumSize: const Size(150, 50),
-      ),
-    ),
-    inputDecorationTheme: InputDecorationTheme(
-      hoverColor: Colors.red.shade700,
-      focusedBorder: const UnderlineInputBorder(
-        borderSide: BorderSide(color: Colors.white),
-      ),
-      border: const UnderlineInputBorder(
-        borderSide: BorderSide(color: Colors.white),
-      ),
-      errorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(
-          color: Colors.red.shade700,
-        ),
-      ),
-    ),
-  );
+  Point position = const Point(0.0, 0.0);
+
+  final fireBase = getIt<FireBaseDatabase>();
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GameWidget<RacingGame>(
-        game: RacingGame(),
-        overlayBuilderMap: const {},
-      ),
       theme: theme,
+      home: Scaffold(
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              onPressed: () async {
+                await fireBase.checkRoom();
+              },
+            ),
+            FloatingActionButton(
+              onPressed: () async {
+                fireBase.clearRoom();
+              },
+            ),
+          ],
+        ),
+        body: GameWidget<RacingGame>(
+          game: RacingGame(),
+          overlayBuilderMap: const {},
+        ),
+      ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 }

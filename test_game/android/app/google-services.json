@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "607895076509",
+    "firebase_url": "https://realtime-database-87638-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "realtime-database-87638",
+    "storage_bucket": "realtime-database-87638.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607895076509:android:558aca988e18542565de74",
+        "android_client_info": {
+          "package_name": "com.example.test_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607895076509-4u00eeadfhh4j0665l718vef30ekjuss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAklgoXUVP4hDxQVFPmYmXsR-kRiO4ogJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607895076509-4u00eeadfhh4j0665l718vef30ekjuss.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "607895076509-embpavrt64koakto6cf0u8qi6puq8m33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testGame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

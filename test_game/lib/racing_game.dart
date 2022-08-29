@@ -1,26 +1,11 @@
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
-import 'package:flame/input.dart';
 import 'package:flame/palette.dart';
-import 'package:flame_texturepacker/flame_texturepacker.dart';
 import 'package:flutter/material.dart' hide Image, Gradient;
-import 'package:flutter/services.dart';
+import 'package:test_game/constant.dart';
+import 'package:test_game/fire_base_database.dart';
+import 'package:test_game/get_it.dart';
 import 'package:test_game/joystick_player.dart';
-
-final List<Map<LogicalKeyboardKey, LogicalKeyboardKey>> playersKeys = [
-  {
-    LogicalKeyboardKey.arrowUp: LogicalKeyboardKey.arrowUp,
-    LogicalKeyboardKey.arrowDown: LogicalKeyboardKey.arrowDown,
-    LogicalKeyboardKey.arrowLeft: LogicalKeyboardKey.arrowLeft,
-    LogicalKeyboardKey.arrowRight: LogicalKeyboardKey.arrowRight,
-  },
-  {
-    LogicalKeyboardKey.keyW: LogicalKeyboardKey.arrowUp,
-    LogicalKeyboardKey.keyS: LogicalKeyboardKey.arrowDown,
-    LogicalKeyboardKey.keyA: LogicalKeyboardKey.arrowLeft,
-    LogicalKeyboardKey.keyD: LogicalKeyboardKey.arrowRight,
-  },
-];
 
 class RacingGame extends FlameGame with HasDraggables {
   SpriteComponent image1 = SpriteComponent();
@@ -31,10 +16,13 @@ class RacingGame extends FlameGame with HasDraggables {
   late final JoystickPlayer player;
   late final JoystickComponent joystick;
   late SpriteAnimationComponent animationComponent;
+  FireBaseDatabase fireBase = getIt<FireBaseDatabase>();
 
   @override
   Future<void> onLoad() async {
     super.onLoad();
+
+    await fireBase.checkRoom();
 
     image1
       ..sprite = await loadSprite("plx-1.png")
@@ -72,6 +60,15 @@ class RacingGame extends FlameGame with HasDraggables {
 
     add(player);
     add(joystick);
+
+    fireBase.listenRoom(fireBase.currentRoom ?? 0, (event) async {
+      // SpriteComponent image6 = SpriteComponent();
+      // image6..sprite = await loadSprite("jump.png")
+      //   ..size = Vector2(100, 100)
+      //   ..position = Vector2(100, 100);
+      // add(image6);
+      logger.d(event.snapshot.value);
+    });
 
     // final sprites = await fromJSONAtlas("layers/idle.png", "idle.json");
     // SpriteAnimation idle = SpriteAnimation.spriteList(sprites, stepTime: 0.05);
