@@ -56,6 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
+      await fireBase.checkRoom();
+    });
   }
 
   @override
@@ -68,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             FloatingActionButton(
               onPressed: () async {
-                await fireBase.checkRoom();
+                // await fireBase.checkRoom();
               },
             ),
             FloatingActionButton(

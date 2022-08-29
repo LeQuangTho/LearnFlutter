@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:firebase_database/firebase_database.dart';
 import 'package:test_game/constant.dart';
+import 'package:test_game/models/player.dart';
 
 class FireBaseDatabase {
   late FirebaseDatabase database;
@@ -89,12 +90,32 @@ class FireBaseDatabase {
     userId = users.length;
   }
 
-  listenRoom(int roomId, Function(DatabaseEvent event) listen) {
-    database.ref("/rooms/$roomId/users").onValue.listen(listen);
+  listenRoom(Function(DatabaseEvent event) listen) {
+    database.ref("/rooms/$currentRoom/users").onChildAdded.listen(listen);
+  }
+
+  listenUserRoom(Function(List<Player> player) listen) async {
+    var data = await database.ref("/rooms/$currentRoom/users").get();
+    if (data.value != null) {
+      List<Player> players = List<Player>.from(
+              jsonDecode(jsonEncode(data.value)).map((e) => Player.fromJson(e)))
+          .toList();
+      if (userId != null) {
+        players.removeAt(userId!);
+      }
+      listen(players);
+    }
   }
 
   Future<void> clearRoom() async {
     final ref = database.ref("/rooms/$currentRoom/users");
     await ref.set([]);
+  }
+
+  Future<int> getSumPlayer() async {
+    var data = await database.ref("/rooms/$currentRoom/users").get();
+
+    List users = jsonDecode(jsonEncode(data.value));
+    return users.length;
   }
 }

@@ -2,10 +2,10 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
 import 'package:flutter/material.dart' hide Image, Gradient;
-import 'package:test_game/constant.dart';
 import 'package:test_game/fire_base_database.dart';
 import 'package:test_game/get_it.dart';
 import 'package:test_game/joystick_player.dart';
+import 'package:test_game/models/player.dart';
 
 class RacingGame extends FlameGame with HasDraggables {
   SpriteComponent image1 = SpriteComponent();
@@ -21,8 +21,6 @@ class RacingGame extends FlameGame with HasDraggables {
   @override
   Future<void> onLoad() async {
     super.onLoad();
-
-    await fireBase.checkRoom();
 
     image1
       ..sprite = await loadSprite("plx-1.png")
@@ -59,15 +57,55 @@ class RacingGame extends FlameGame with HasDraggables {
     player = JoystickPlayer(joystick);
 
     add(player);
+
     add(joystick);
 
-    fireBase.listenRoom(fireBase.currentRoom ?? 0, (event) async {
-      // SpriteComponent image6 = SpriteComponent();
-      // image6..sprite = await loadSprite("jump.png")
-      //   ..size = Vector2(100, 100)
-      //   ..position = Vector2(100, 100);
-      // add(image6);
-      logger.d(event.snapshot.value);
+    fireBase.listenUserRoom((player) async {
+      for (var element in player) {
+        SpriteComponent image6 = SpriteComponent();
+        image6
+          ..sprite = await loadSprite("jump.png")
+          ..size = Vector2(100, 100)
+          ..position = Vector2(
+              (element.position!.x as double), (element.position!.y as double));
+        fireBase.database
+            .ref(
+                "/rooms/${fireBase.currentRoom}/users/${player.indexOf(element)}/position")
+            .onValue
+            .listen((event) {
+          if (event.snapshot.value != null) {
+            Position position = Position.fromJson(event.snapshot.value);
+            image6.position =
+                Vector2((position.x as double), (position.y as double));
+          }
+        });
+        add(image6);
+      }
+    });
+
+    fireBase.listenRoom((event) async {
+      if (event.snapshot.value != null) {
+        int sumPlayer = await fireBase.getSumPlayer();
+        SpriteComponent image6 = SpriteComponent();
+        image6
+          ..sprite = await loadSprite("jump.png")
+          ..size = Vector2(100, 100);
+        fireBase.database
+            .ref(
+                "/rooms/${fireBase.currentRoom}/users/${sumPlayer - 1}/position")
+            .onValue
+            .listen((event) async {
+          if (event.snapshot.value != null) {
+            Position position = Position.fromJson(event.snapshot.value);
+            image6
+              ..sprite = await loadSprite("jump.png")
+              ..size = Vector2(100, 100)
+              ..position =
+                  Vector2((position.x as double), (position.y as double));
+          }
+        });
+        add(image6);
+      }
     });
 
     // final sprites = await fromJSONAtlas("layers/idle.png", "idle.json");
