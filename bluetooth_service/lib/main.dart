@@ -1,21 +1,36 @@
+// Flutter Blue Plus
+
 import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 import 'widgets.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const FlutterBlueApp());
 }
 
-class FlutterBlueApp extends StatelessWidget {
+class FlutterBlueApp extends StatefulWidget {
   const FlutterBlueApp({Key? key}) : super(key: key);
+
+  @override
+  State<FlutterBlueApp> createState() => _FlutterBlueAppState();
+}
+
+class _FlutterBlueAppState extends State<FlutterBlueApp> {
+  @override
+  void initState() {
+    // [
+    //   Permission.bluetooth,
+    //   Permission.bluetoothScan,
+    //   Permission.bluetoothConnect,
+    //   Permission.bluetoothAdvertise,
+    // ].request();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -82,18 +97,6 @@ class FindDevicesScreen extends StatefulWidget {
 
 class _FindDevicesScreenState extends State<FindDevicesScreen> {
   @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-      await Permission.bluetoothAdvertise.request();
-      await Permission.bluetooth.request();
-      await Permission.bluetoothScan.request();
-      await Permission.bluetoothConnect.request();
-      await Permission.accessMediaLocation.request();
-    });
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -101,8 +104,8 @@ class _FindDevicesScreenState extends State<FindDevicesScreen> {
         actions: [
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.black,
+              primary: Colors.black,
+              onPrimary: Colors.white,
             ),
             onPressed: Platform.isAndroid
                 ? () => FlutterBluePlus.instance.turnOff()
@@ -122,47 +125,49 @@ class _FindDevicesScreenState extends State<FindDevicesScreen> {
                     .asyncMap((_) => FlutterBluePlus.instance.connectedDevices),
                 initialData: const [],
                 builder: (c, snapshot) => Column(
-                  children: snapshot.data!
-                      .map((d) => ListTile(
-                            title: Text(d.name),
-                            subtitle: Text(d.id.toString()),
-                            trailing: StreamBuilder<BluetoothDeviceState>(
-                              stream: d.state,
-                              initialData: BluetoothDeviceState.disconnected,
-                              builder: (c, snapshot) {
-                                if (snapshot.data ==
-                                    BluetoothDeviceState.connected) {
-                                  return ElevatedButton(
-                                    child: const Text('OPEN'),
-                                    onPressed: () => Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                DeviceScreen(device: d))),
-                                  );
-                                }
-                                return Text(snapshot.data.toString());
-                              },
-                            ),
-                          ))
-                      .toList(),
+                  children: snapshot.data!.map((d) {
+                    return ListTile(
+                      title: Text(d.name),
+                      subtitle: Text(d.id.toString()),
+                      trailing: StreamBuilder<BluetoothDeviceState>(
+                        stream: d.state,
+                        initialData: BluetoothDeviceState.disconnected,
+                        builder: (c, snapshot) {
+                          if (snapshot.data == BluetoothDeviceState.connected) {
+                            return ElevatedButton(
+                              child: const Text('OPEN'),
+                              onPressed: () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          DeviceScreen(device: d))),
+                            );
+                          }
+                          return Text(snapshot.data.toString());
+                        },
+                      ),
+                    );
+                  }).toList(),
                 ),
               ),
               StreamBuilder<List<ScanResult>>(
                 stream: FlutterBluePlus.instance.scanResults,
                 initialData: const [],
                 builder: (c, snapshot) => Column(
-                  children: snapshot.data!
-                      .map(
-                        (r) => ScanResultTile(
+                  children: snapshot.data!.map(
+                    (r) {
+                      if (r.device.name.isNotEmpty) {
+                        return ScanResultTile(
                           result: r,
                           onTap: () => Navigator.of(context)
                               .push(MaterialPageRoute(builder: (context) {
                             r.device.connect();
                             return DeviceScreen(device: r.device);
                           })),
-                        ),
-                      )
-                      .toList(),
+                        );
+                      }
+                      return Container();
+                    },
+                  ).toList(),
                 ),
               ),
             ],
@@ -182,15 +187,8 @@ class _FindDevicesScreenState extends State<FindDevicesScreen> {
           } else {
             return FloatingActionButton(
                 child: const Icon(Icons.search),
-                onPressed: () async {
-                  await Permission.bluetoothAdvertise.request();
-                  await Permission.bluetooth.request();
-                  await Permission.bluetoothScan.request();
-                  await Permission.bluetoothConnect.request();
-                  await Permission.accessMediaLocation.request();
-                  FlutterBluePlus.instance
-                      .startScan(timeout: const Duration(seconds: 4));
-                });
+                onPressed: () => FlutterBluePlus.instance
+                    .startScan(timeout: const Duration(seconds: 15)));
           }
         },
       ),
@@ -356,7 +354,7 @@ class DeviceScreen extends StatelessWidget {
               initialData: const [],
               builder: (c, snapshot) {
                 return Column(
-                  children: _buildServiceTiles(snapshot.data ?? []),
+                  children: _buildServiceTiles(snapshot.data!),
                 );
               },
             ),

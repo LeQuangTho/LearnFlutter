@@ -1,45 +1,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bluetooth_service">
-    <!-- Permission to access the Internet -->
-    <uses-permission android:name="android.permission.INTERNET " />
-    <!-- Permission to check Wi-Fi status -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!-- Permission to change Wi-Fi status -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <!-- Permission to obtain a coarse device location -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- Permission to obtain the accurate device location -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!--Permission to read external storage -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <!-- Permission to write data to external storage -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- Bluetooth permissions -->
-    <!--BLUETOOTH PERMISSION-->
-    <!-- Request legacy Bluetooth permissions on older devices. -->
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <!-- Needed only if your app looks for Bluetooth devices.
-             If your app doesn't use Bluetooth scan results to derive physical
-             location information, you can strongly assert that your app
-             doesn't derive physical location. -->
-    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-    <!-- Needed only if your app makes the device discoverable to Bluetooth
-      devices. -->
-    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
-    <!-- Needed only if your app communicates with already-paired Bluetooth
-           devices. -->
-    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-    <!--bibo01 : hardware option-->
-    <uses-feature
-        android:name="android.hardware.bluetooth"
-        android:required="true" />
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+    <!-- Required for Nearby Connections -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    <uses-feature android:name="android.software.companion_device_setup" />
+    <!-- Optional: only required for FILE payloads-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- For Android 12+ support-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"

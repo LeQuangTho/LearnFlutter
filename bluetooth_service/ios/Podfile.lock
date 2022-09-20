@@ -1,0 +1,83 @@
+PODS:
+  - beacon_broadcast (0.0.1):
+    - Flutter
+  - device_info (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_blue_plus (0.0.1):
+    - Flutter
+    - flutter_blue_plus/Protos (= 0.0.1)
+  - flutter_blue_plus/Protos (0.0.1):
+    - Flutter
+    - Protobuf (~> 3.11)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - path_provider_ios (0.0.1):
+    - Flutter
+  - permission_handler_apple (9.0.4):
+    - Flutter
+  - Protobuf (3.21.6)
+  - reactive_ble_mobile (0.0.1):
+    - Flutter
+    - Protobuf (~> 3.5)
+    - SwiftProtobuf (~> 1.0)
+  - SwiftProtobuf (1.20.1)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - beacon_broadcast (from `.symlinks/plugins/beacon_broadcast/ios`)
+  - device_info (from `.symlinks/plugins/device_info/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_blue_plus (from `.symlinks/plugins/flutter_blue_plus/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - reactive_ble_mobile (from `.symlinks/plugins/reactive_ble_mobile/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Protobuf
+    - SwiftProtobuf
+    - Toast
+
+EXTERNAL SOURCES:
+  beacon_broadcast:
+    :path: ".symlinks/plugins/beacon_broadcast/ios"
+  device_info:
+    :path: ".symlinks/plugins/device_info/ios"
+  Flutter:
+    :path: Flutter
+  flutter_blue_plus:
+    :path: ".symlinks/plugins/flutter_blue_plus/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  reactive_ble_mobile:
+    :path: ".symlinks/plugins/reactive_ble_mobile/ios"
+
+SPEC CHECKSUMS:
+  beacon_broadcast: 2c2562111f7b7e0f1ab59487f6bc805805e3c9f3
+  device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_blue_plus: 6787777145d615de01828f3a9fa423c3c702f0b3
+  fluttertoast: 16fbe6039d06a763f3533670197d01fc73459037
+  image_picker_ios: b786a5dcf033a8336a657191401bfdf12017dabb
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  Protobuf: e7846f61e8542750cf311385fc633c1d00928f9f
+  reactive_ble_mobile: 9ce6723d37ccf701dbffd202d487f23f5de03b4c
+  SwiftProtobuf: e40a7684079620e84ba522dbaeab0cddb0ec7ffd
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 86167c8269f2786f5af46832fc1903e35e4fe708
+
+COCOAPODS: 1.11.3

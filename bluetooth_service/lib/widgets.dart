@@ -1,3 +1,7 @@
+// Copyright 2017, Paul DeMarco.
+// All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 
@@ -88,12 +92,12 @@ class ScanResultTile extends StatelessWidget {
       title: _buildTitle(context),
       leading: Text(result.rssi.toString()),
       trailing: ElevatedButton(
+        child: const Text('CONNECT'),
         style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white,
-          backgroundColor: Colors.black,
+          primary: Colors.black,
+          onPrimary: Colors.white,
         ),
         onPressed: (result.advertisementData.connectable) ? onTap : null,
-        child: const Text("CONNECT"),
       ),
       children: <Widget>[
         _buildAdvRow(
