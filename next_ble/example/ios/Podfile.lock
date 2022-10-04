@@ -1,0 +1,50 @@
+PODS:
+  - Flutter (1.0.0)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - next_ble (0.0.1):
+    - Flutter
+    - Protobuf (~> 3.5)
+    - SwiftProtobuf (~> 1.0)
+  - permission_handler_apple (9.0.4):
+    - Flutter
+  - Protobuf (3.21.6)
+  - SwiftProtobuf (1.20.2)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - next_ble (from `.symlinks/plugins/next_ble/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - SwiftProtobuf (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - Protobuf
+    - SwiftProtobuf
+    - Toast
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  next_ble:
+    :path: ".symlinks/plugins/next_ble/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  fluttertoast: 16fbe6039d06a763f3533670197d01fc73459037
+  next_ble: ed850190821c877068562e8444f18287f08d4c1b
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  Protobuf: e7846f61e8542750cf311385fc633c1d00928f9f
+  SwiftProtobuf: 9f458aaa7844a2fc0b910053e66578bc4e2da9c1
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: db26acc9a57d51bb4377239745610b44c47f6f9f
+
+COCOAPODS: 1.11.3
