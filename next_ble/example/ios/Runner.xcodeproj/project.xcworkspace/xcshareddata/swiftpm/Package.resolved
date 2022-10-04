@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-protobuf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-protobuf.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a7c57dc39883e15b2f0f513e2f36ff117e131b58"
+      }
+    }
+  ],
+  "version" : 2
+}
