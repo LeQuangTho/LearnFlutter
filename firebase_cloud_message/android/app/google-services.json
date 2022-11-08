@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1082247271513",
+    "project_id": "fcm-bge",
+    "storage_bucket": "fcm-bge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082247271513:android:1304964baa3d0af3adcd48",
+        "android_client_info": {
+          "package_name": "com.example.firebase_cloud_message"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082247271513-n58857iono4uvrah615010qddmrjnd35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdVXBm-4Lu2G20uME-LZA44Nzl9OsHZx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082247271513-n58857iono4uvrah615010qddmrjnd35.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1082247271513-4lh2ki3j1tb22gu2ql7p3b6t1t01jg3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseCloudMessage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
