@@ -1,11 +1,31 @@
 import 'dart:async';
-import 'dart:developer';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:notification_listener_service/notification_event.dart';
+import 'package:flutter_background_service/flutter_background_service.dart';
+import 'package:flutter_background_service_android/flutter_background_service_android.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:listen_notify_device/data/service_notification.dart';
+import 'package:listen_notify_device/pages/save_with_notifications.dart';
+import 'package:listen_notify_device/utils/helper.dart';
 import 'package:notification_listener_service/notification_listener_service.dart';
+import 'package:sizer/sizer.dart';
 
-void main() {
+import 'data/hive_helper.dart';
+
+const notificationChannelId = 'my_foreground';
+
+Future<void> main() async {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+  await Hive.initFlutter();
+  await HiveHelper.adapter();
+  await HiveHelper.initialBox();
+
+  await initializeService();
   runApp(const MyApp());
 }
 
@@ -17,128 +37,100 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  StreamSubscription<ServiceNotificationEvent>? _subscription;
-  List<ServiceNotificationEvent> events = [];
-
   @override
   void initState() {
+    FlutterNativeSplash.remove();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Column(
-            children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    TextButton(
-                      onPressed: () async {
-                        final res = await NotificationListenerService
-                            .requestPermission();
-                        log("Is enabled: $res");
-                      },
-                      child: const Text("Request Permission"),
-                    ),
-                    const SizedBox(height: 20.0),
-                    TextButton(
-                      onPressed: () async {
-                        final bool res = await NotificationListenerService
-                            .isPermissionGranted();
-                        log("Is enabled: $res");
-                      },
-                      child: const Text("Check Permission"),
-                    ),
-                    const SizedBox(height: 20.0),
-                    TextButton(
-                      onPressed: () {
-                        _subscription = NotificationListenerService
-                            .notificationsStream
-                            .listen((event) {
-                          log("$event");
-                          setState(() {
-                            events.add(event);
-                          });
-                        });
-                      },
-                      child: const Text("Start Stream"),
-                    ),
-                    const SizedBox(height: 20.0),
-                    TextButton(
-                      onPressed: () {
-                        _subscription?.cancel();
-                      },
-                      child: const Text("Stop Stream"),
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: events.length,
-                  itemBuilder: (_, index) => Padding(
-                    padding: const EdgeInsets.only(bottom: 8.0),
-                    child: ListTile(
-                      onTap: () async {
-                        try {
-                          await events[index]
-                              .sendReply("This is an auto response");
-                        } catch (e) {
-                          log(e.toString());
-                        }
-                      },
-                      trailing: events[index].hasRemoved!
-                          ? const Text(
-                              "Removed",
-                              style: TextStyle(color: Colors.red),
-                            )
-                          : const SizedBox.shrink(),
-                      leading: Image.memory(
-                        events[index].notificationIcon!,
-                        width: 35.0,
-                        height: 35.0,
-                      ),
-                      title: Text(events[index].title ?? "No title"),
-                      subtitle: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            events[index].content ?? "no content",
-                            style: const TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                          const SizedBox(height: 8.0),
-                          events[index].canReply!
-                              ? const Text(
-                                  "Replied with: This is an auto reply",
-                                  style: TextStyle(color: Colors.purple),
-                                )
-                              : const SizedBox.shrink(),
-                          events[index].hasExtrasPicture!
-                              ? Image.memory(
-                                  events[index].extrasPicture!,
-                                )
-                              : const SizedBox.shrink(),
-                        ],
-                      ),
-                      isThreeLine: true,
-                    ),
-                  ),
-                ),
-              )
-            ],
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return MaterialApp(
+          theme: ThemeData(
+            useMaterial3: true,
+            primarySwatch: Colors.purple,
           ),
-        ),
-      ),
+          debugShowCheckedModeBanner: false,
+          home: const SaveWithNotification(),
+        );
+      },
     );
   }
+}
+
+Future<void> initializeService() async {
+  final service = FlutterBackgroundService();
+
+  const AndroidNotificationChannel channel = AndroidNotificationChannel(
+    notificationChannelId,
+    'MY FOREGROUND SERVICE',
+    description: 'This channel is used for important notifications.',
+    importance: Importance.low,
+  );
+
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
+
+  await flutterLocalNotificationsPlugin
+      .resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin>()
+      ?.createNotificationChannel(channel);
+
+  await service.configure(
+    androidConfiguration: AndroidConfiguration(
+      onStart: onStart,
+      autoStart: true,
+      isForegroundMode: true,
+      notificationChannelId: notificationChannelId,
+      initialNotificationTitle: 'Save Notification Apps',
+      initialNotificationContent: 'Listening...',
+      foregroundServiceNotificationId: 888,
+    ),
+    iosConfiguration: IosConfiguration(),
+  );
+
+  service.startService();
+}
+
+@pragma('vm:entry-point')
+onStart(ServiceInstance service) async {
+  // Only available for flutter 3.0.0 and later
+  DartPluginRegistrant.ensureInitialized();
+
+  final _helper = Helper();
+  await Hive.initFlutter();
+  await HiveHelper.adapter();
+  await HiveHelper.initialBox();
+  final localData = HiveHelper();
+
+  NotificationListenerService.notificationsStream.listen((event) async {
+    final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+        FlutterLocalNotificationsPlugin();
+
+    // bring to foreground
+    if (service is AndroidServiceInstance &&
+        !(await _helper.isIgnore(event.packageName ?? ''))) {
+      await localData.addNotification(
+          ServiceNotification.fromServiceNotificationEvent(event));
+
+      if (await service.isForegroundService()) {
+        flutterLocalNotificationsPlugin.show(
+          888,
+          'Save Notification Apps',
+          'Listening...${(await localData.getAllNotification()).length}',
+          const NotificationDetails(
+            android: AndroidNotificationDetails(
+              notificationChannelId,
+              'MY FOREGROUND SERVICE',
+              color: Colors.green,
+              icon: '@mipmap/launcher_icon',
+              ongoing: true,
+            ),
+          ),
+        );
+      }
+    }
+  });
 }
