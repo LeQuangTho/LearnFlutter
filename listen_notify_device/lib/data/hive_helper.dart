@@ -16,7 +16,7 @@ class HiveHelper {
     final box = Hive.box(BOX);
 
     if (box.values.toList().length > 100) {
-      box.deleteAll(box.keys.skip(100));
+      box.deleteAll(box.keys.take(box.values.toList().length - 100));
     }
 
     await box.add(notify);

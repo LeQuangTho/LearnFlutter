@@ -91,8 +91,10 @@ class _SaveWithNotificationState extends State<SaveWithNotification> {
                   setState(() {});
                 },
                 child: ListView.separated(
+                  reverse: true,
                   physics: const BouncingScrollPhysics(
-                      parent: AlwaysScrollableScrollPhysics()),
+                    parent: AlwaysScrollableScrollPhysics(),
+                  ),
                   itemCount: events.length,
                   itemBuilder: (_, index) => NotificationTile(events[index]),
                   separatorBuilder: (context, index) => const Divider(
