@@ -15,6 +15,10 @@ class HiveHelper {
   Future<void> addNotification(ServiceNotification notify) async {
     final box = Hive.box(BOX);
 
+    if (box.values.toList().length > 100) {
+      box.deleteAll(box.keys.skip(100));
+    }
+
     await box.add(notify);
   }
 
@@ -27,14 +31,8 @@ class HiveHelper {
   Future<List<ServiceNotification>> getAllNotification() async {
     final box = Hive.box(BOX);
 
-    final data = box.values.toList();
+    final data = box.values.toList().cast<ServiceNotification>();
 
-    if (data is List<ServiceNotification>) {
-      print('object');
-      return data;
-    } else {
-      print('no');
-      return [];
-    }
+    return data;
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:listen_notify_device/data/service_notification.dart';
+import 'package:listen_notify_device/dialogs/detail_notification.dart';
 
 class NotificationTile extends StatelessWidget {
   const NotificationTile(this.item, {Key? key}) : super(key: key);
@@ -14,6 +16,7 @@ class NotificationTile extends StatelessWidget {
         // } catch (e) {
         //   log(e.toString());
         // }
+        showDetailNotification(context, item: item);
       },
       trailing: (item.hasRemoved ?? false)
           ? const Text(
@@ -24,11 +27,12 @@ class NotificationTile extends StatelessWidget {
       leading: item.notificationIcon != null
           ? Image.memory(
               item.notificationIcon!,
-              // item.notificationIcon!,
-              width: 35.0,
-              height: 35.0,
+              width: 50.0,
+              height: 50.0,
             )
-          : const FlutterLogo(),
+          : const FlutterLogo(
+              size: 50,
+            ),
       title: Text(item.title ?? "No title"),
       subtitle: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +44,7 @@ class NotificationTile extends StatelessWidget {
           const SizedBox(height: 8.0),
           (item.canReply ?? false)
               ? const Text(
-                  "Replied with: This is an auto reply",
+                  "You can reply!",
                   style: TextStyle(
                     color: Colors.purple,
                   ),
@@ -49,12 +53,17 @@ class NotificationTile extends StatelessWidget {
           (item.hasExtrasPicture ?? false)
               ? Image.memory(
                   item.extrasPicture!,
-                  // item.extrasPicture!,
                 )
               : const SizedBox.shrink(),
+          Text(
+            DateFormat.yMd().add_jm().format(item.dateTime ?? DateTime.now()),
+            style: const TextStyle(
+              color: Colors.blueGrey,
+            ),
+          ),
         ],
       ),
-      isThreeLine: true,
+      // isThreeLine: true,
     );
   }
 }

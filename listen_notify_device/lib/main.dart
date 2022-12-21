@@ -8,9 +8,10 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:listen_notify_device/data/service_notification.dart';
-import 'package:listen_notify_device/save_with_notifications.dart';
+import 'package:listen_notify_device/pages/save_with_notifications.dart';
+import 'package:listen_notify_device/utils/helper.dart';
 import 'package:notification_listener_service/notification_listener_service.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+import 'package:sizer/sizer.dart';
 
 import 'data/hive_helper.dart';
 
@@ -44,13 +45,17 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: true,
-        primarySwatch: Colors.purple,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const SaveWithNotification(),
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return MaterialApp(
+          theme: ThemeData(
+            useMaterial3: true,
+            primarySwatch: Colors.purple,
+          ),
+          debugShowCheckedModeBanner: false,
+          home: const SaveWithNotification(),
+        );
+      },
     );
   }
 }
@@ -83,11 +88,7 @@ Future<void> initializeService() async {
       initialNotificationContent: 'Listening...',
       foregroundServiceNotificationId: 888,
     ),
-    iosConfiguration: IosConfiguration(
-      autoStart: true,
-      onForeground: onStart,
-      onBackground: (service) => true,
-    ),
+    iosConfiguration: IosConfiguration(),
   );
 
   service.startService();
@@ -98,7 +99,7 @@ onStart(ServiceInstance service) async {
   // Only available for flutter 3.0.0 and later
   DartPluginRegistrant.ensureInitialized();
 
-  PackageInfo packageInfo = await PackageInfo.fromPlatform();
+  final _helper = Helper();
   await Hive.initFlutter();
   await HiveHelper.adapter();
   await HiveHelper.initialBox();
@@ -108,12 +109,12 @@ onStart(ServiceInstance service) async {
     final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
         FlutterLocalNotificationsPlugin();
 
-    await localData.addNotification(
-        ServiceNotification.fromServiceNotificationEvent(event));
-
     // bring to foreground
     if (service is AndroidServiceInstance &&
-        event.packageName != packageInfo.packageName) {
+        !(await _helper.isIgnore(event.packageName ?? ''))) {
+      await localData.addNotification(
+          ServiceNotification.fromServiceNotificationEvent(event));
+
       if (await service.isForegroundService()) {
         flutterLocalNotificationsPlugin.show(
           888,

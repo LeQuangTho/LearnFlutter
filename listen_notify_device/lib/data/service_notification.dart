@@ -25,18 +25,20 @@ class ServiceNotification {
   Uint8List? notificationIcon;
   @HiveField(8)
   String? content;
+  @HiveField(9)
+  DateTime? dateTime;
 
-  ServiceNotification({
-    this.id,
-    this.canReply,
-    this.hasExtrasPicture,
-    this.hasRemoved,
-    this.extrasPicture,
-    this.packageName,
-    this.title,
-    this.notificationIcon,
-    this.content,
-  });
+  ServiceNotification(
+      {this.id,
+      this.canReply,
+      this.hasExtrasPicture,
+      this.hasRemoved,
+      this.extrasPicture,
+      this.packageName,
+      this.title,
+      this.notificationIcon,
+      this.content,
+      this.dateTime});
 
   factory ServiceNotification.fromServiceNotificationEvent(
           ServiceNotificationEvent value) =>
@@ -50,5 +52,6 @@ class ServiceNotification {
         id: value.id,
         packageName: value.packageName,
         title: value.title,
+        dateTime: DateTime.now(),
       );
 }

@@ -26,13 +26,14 @@ class ServiceNotificationAdapter extends TypeAdapter<ServiceNotification> {
       title: fields[6] as String?,
       notificationIcon: fields[7] as Uint8List?,
       content: fields[8] as String?,
+      dateTime: fields[9] as DateTime?,
     );
   }
 
   @override
   void write(BinaryWriter writer, ServiceNotification obj) {
     writer
-      ..writeByte(9)
+      ..writeByte(10)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -50,7 +51,9 @@ class ServiceNotificationAdapter extends TypeAdapter<ServiceNotification> {
       ..writeByte(7)
       ..write(obj.notificationIcon)
       ..writeByte(8)
-      ..write(obj.content);
+      ..write(obj.content)
+      ..writeByte(9)
+      ..write(obj.dateTime);
   }
 
   @override

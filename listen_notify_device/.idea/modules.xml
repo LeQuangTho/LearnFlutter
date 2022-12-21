@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/listen_notify_device.iml" filepath="$PROJECT_DIR$/listen_notify_device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/listen_notify_device_android.iml" filepath="$PROJECT_DIR$/android/listen_notify_device_android.iml" />
     </modules>
   </component>
 </project>

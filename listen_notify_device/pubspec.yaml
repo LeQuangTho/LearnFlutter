@@ -44,6 +44,10 @@ dependencies:
   package_info_plus: ^3.0.2
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  app_settings: ^4.1.8
+  flutter_secure_storage: ^7.0.1
+  intl: ^0.18.0
+  sizer: ^2.0.15
 
 dev_dependencies:
   flutter_test:
