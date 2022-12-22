@@ -1,5 +1,8 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:listen_notify_device/data/service_notification.dart';
+import 'package:listen_notify_device/data/storage_helper.dart';
+
+import '../service_locator.dart';
 
 const String BOX = 'BOX';
 
@@ -15,8 +18,12 @@ class HiveHelper {
   Future<void> addNotification(ServiceNotification notify) async {
     final box = Hive.box(BOX);
 
-    if (box.values.toList().length > 100) {
-      box.deleteAll(box.keys.take(box.values.toList().length - 100));
+    final storage = locator.get<StorageHelper>();
+
+    final limit = await storage.getStorageLimit();
+
+    if (box.values.toList().length > limit) {
+      box.deleteAll(box.keys.take(box.values.toList().length - limit));
     }
 
     await box.add(notify);
