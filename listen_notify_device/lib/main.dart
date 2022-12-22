@@ -9,6 +9,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:listen_notify_device/data/service_notification.dart';
 import 'package:listen_notify_device/pages/save_with_notifications.dart';
+import 'package:listen_notify_device/service_locator.dart';
 import 'package:listen_notify_device/utils/helper.dart';
 import 'package:notification_listener_service/notification_listener_service.dart';
 import 'package:sizer/sizer.dart';
@@ -20,7 +21,7 @@ const notificationChannelId = 'my_foreground';
 Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
+  setupLocator();
   await Hive.initFlutter();
   await HiveHelper.adapter();
   await HiveHelper.initialBox();
@@ -99,19 +100,23 @@ onStart(ServiceInstance service) async {
   // Only available for flutter 3.0.0 and later
   DartPluginRegistrant.ensureInitialized();
 
-  final _helper = Helper();
+  setupLocator();
+
+  final helper = Helper();
   await Hive.initFlutter();
   await HiveHelper.adapter();
+
   await HiveHelper.initialBox();
-  final localData = HiveHelper();
+
+  final localData = locator.get<HiveHelper>();
 
   NotificationListenerService.notificationsStream.listen((event) async {
     final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
         FlutterLocalNotificationsPlugin();
 
-    // bring to foreground
+    //   // bring to foreground
     if (service is AndroidServiceInstance &&
-        !(await _helper.isIgnore(event.packageName ?? ''))) {
+        !(await helper.isIgnore(event.packageName ?? ''))) {
       await localData.addNotification(
           ServiceNotification.fromServiceNotificationEvent(event));
 

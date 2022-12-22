@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../data/service_notification.dart';
 import '../data/storage_helper.dart';
+import '../service_locator.dart';
 
 showDetailNotification(BuildContext context,
     {required ServiceNotification item}) async {
-  final storageHelper = StorageHelper();
+  final storageHelper = locator.get<StorageHelper>();
   final packages = await storageHelper.getFilterPackage();
 
   showDialog(
@@ -17,8 +18,8 @@ showDetailNotification(BuildContext context,
       title: Text(item.title ?? 'Thông báo'),
       icon: Center(
         child: Container(
-          height: 50,
-          width: 50,
+          height: 70,
+          width: 70,
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: Colors.white,

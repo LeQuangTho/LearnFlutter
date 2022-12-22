@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../data/storage_helper.dart';
+import '../service_locator.dart';
 
 managerPackageIgnore(BuildContext context) async {
   showDialog(
@@ -18,7 +19,7 @@ class _ManagerPackageDialog extends StatefulWidget {
 }
 
 class _ManagerPackageDialogState extends State<_ManagerPackageDialog> {
-  final storage = StorageHelper();
+  final storage = locator.get<StorageHelper>();
   List<String> packages = [];
   List<String> packagesDelete = [];
 
@@ -37,8 +38,8 @@ class _ManagerPackageDialogState extends State<_ManagerPackageDialog> {
       title: const Text('Quản lí package'),
       icon: Center(
         child: Container(
-          height: 50,
-          width: 50,
+          height: 70,
+          width: 70,
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             color: Colors.white,

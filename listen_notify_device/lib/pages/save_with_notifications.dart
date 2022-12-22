@@ -10,6 +10,7 @@ import 'package:notification_listener_service/notification_listener_service.dart
 
 import '../data/hive_helper.dart';
 import '../dialogs/manager_package_ignore.dart';
+import '../dialogs/storage_limit.dart';
 
 class SaveWithNotification extends StatefulWidget {
   const SaveWithNotification({Key? key}) : super(key: key);
@@ -53,17 +54,27 @@ class _SaveWithNotificationState extends State<SaveWithNotification> {
         title: const Text('Notifications All App'),
         actions: [
           PopupMenuButton<int>(
-            icon: const Icon(Icons.filter_alt_rounded),
+            icon: const Icon(
+              Icons.settings,
+            ),
             onSelected: (value) {
               switch (value) {
                 case 1:
                   managerPackageIgnore(context);
+                  break;
+                case 2:
+                  storageLimit(context);
+                  break;
               }
             },
             itemBuilder: (context) => [
               const PopupMenuItem<int>(
                 value: 1,
                 child: Text('Manager package listener'),
+              ),
+              const PopupMenuItem<int>(
+                value: 2,
+                child: Text('Storage limit'),
               ),
             ],
           ),

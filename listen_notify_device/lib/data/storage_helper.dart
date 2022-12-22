@@ -4,6 +4,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class StorageHelper {
   static const String STORAGE_PACKAGE = 'STORAGE_PACKAGE';
+  static const String STORAGE_LIMIT = 'STORAGE_LIMIT';
 
   final _storage = const FlutterSecureStorage(
     aOptions: AndroidOptions(
@@ -57,5 +58,16 @@ class StorageHelper {
       key: STORAGE_PACKAGE,
       value: jsonEncode(dataOld),
     );
+  }
+
+  changeStorageLimit(int value) async {
+    await _storage.write(
+      key: STORAGE_LIMIT,
+      value: '$value',
+    );
+  }
+
+  Future<int> getStorageLimit() async {
+    return int.parse(await _storage.read(key: STORAGE_LIMIT) ?? '100');
   }
 }
