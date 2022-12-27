@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:movie_ticket_booking/widgets/seat.dart';
 
@@ -19,14 +21,15 @@ class _MapSelectSeatsState extends State<MapSelectSeats> {
         ...seats
             .asMap()
             .entries
-            .map((e) => Row(
+            .map((e1) => Row(
                   children: [
-                    ...e.value.asMap().entries.map((e) {
+                    ...e1.value.asMap().entries.map((e2) {
                       return Seat(
-                        name:
-                            (e.key.toString().toUpperCase().codeUnitAt(0) - 64)
-                                .toString(),
-                        isSeat: e.value == 1,
+                        maxSeatOfRow: e1.value.length,
+                        name: '${const Utf8Decoder().convert([
+                              e1.key + 65
+                            ])}${e2.key}',
+                        isSeat: e2.value == 1,
                         status: SeatStatus.none,
                       );
                     })
