@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   get: ^4.6.5
+  vector_math: ^2.1.2
 
 dev_dependencies:
   flutter_test:

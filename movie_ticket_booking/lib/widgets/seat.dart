@@ -43,7 +43,7 @@ class Seat extends StatelessWidget {
 
   _getColor() {
     if (!isSeat) {
-      return Colors.black87;
+      return Colors.transparent;
     }
     switch (status) {
       case SeatStatus.selected:
