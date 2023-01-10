@@ -100,12 +100,6 @@ class AppInterceptorSmartRetry extends Interceptor {
       DefaultRetryEvaluator(defaultRetryableStatuses).evaluate;
 
   @override
-  void onRequest(
-      RequestOptions options, RequestInterceptorHandler handler) async {
-    super.onRequest(options, handler);
-  }
-
-  @override
   void onResponse(Response response, ResponseInterceptorHandler handler) async {
     if (response.statusCode != 200) {
       super.onResponse(response, handler);

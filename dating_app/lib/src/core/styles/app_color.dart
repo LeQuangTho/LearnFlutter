@@ -2,8 +2,21 @@ import 'package:flutter/material.dart';
 
 @immutable
 class AppColors {
-  // ColorPrimary
-  static const Color Pr1 = Color(0xFFE6F7FF);
+  // Color Styles
+  static const Color background = Color(0xFFE5E5E5);
+  static const Color primary = Color(0xFF2934D0);
+  static const Color white = AppColors.w5;
+  static const Color black = AppColors.Dark5;
+  static const Color bg = Color(0xFFF3F3F3);
+  static const Color orange = Color(0xFFF27121);
+  static const Color red = Color(0xFFE94057);
+  static const Color purple = Color(0xFF8A2387);
+  static const Color border = Color(0xFFE8E6EA);
+  static const Color primary100 = Color(0xFF000000);
+  static final Color primary70 = const Color(0xFF000000).withOpacity(0.7);
+  static final Color primary40 = const Color(0xFF000000).withOpacity(0.4);
+  static const Color secondary = Color(0xFF323755);
+  static const Color inactive = Color(0xFFADAFBB);
 
   // ColorNurture 245678910
   static const Color N1 = Color(0xFFF0F5FF);
@@ -235,6 +248,16 @@ class AppColors {
     colors: [
       Color(0xFFFFFFFF),
       Color(0xFFFFFFFF),
+    ],
+  );
+
+  static final mainGradient = LinearGradient(
+    begin: Alignment.topRight,
+    end: Alignment.bottomLeft,
+    colors: [
+      AppColors.orange.withOpacity(0.19),
+      AppColors.red.withOpacity(0.56),
+      AppColors.purple.withOpacity(0.86),
     ],
   );
 }

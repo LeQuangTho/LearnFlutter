@@ -1,35 +1,28 @@
 import 'package:flutter/material.dart';
 
+import 'app_color.dart';
+
 extension AppTextStyles on TextStyle {
-  /// 32/40
-  TextStyle h1() => copyWith(fontSize: 32, height: 40 / 32);
+  /// 34/150
+  TextStyle h1() => copyWith(fontSize: 34, height: 34 / 150);
 
-  /// 24/32
-  TextStyle h2() => copyWith(fontSize: 24, height: 32 / 24);
+  /// 28/150
+  TextStyle h2() => copyWith(fontSize: 28, height: 28 / 150);
 
-  /// 20/28
-  TextStyle h3() => copyWith(fontSize: 20, height: 28 / 20);
+  /// 24/150
+  TextStyle h3() => copyWith(fontSize: 24, height: 24 / 150);
 
-  /// 16/24
-  TextStyle paragraph() => copyWith(fontSize: 16, height: 24 / 16);
+  /// 18/150
+  TextStyle h4() => copyWith(fontSize: 18, height: 18 / 150);
 
-  /// 16/20
-  TextStyle body() => copyWith(fontSize: 16, height: 20 / 16);
+  /// 16/150
+  TextStyle h5() => copyWith(fontSize: 16, height: 16 / 150);
 
-  /// 14/20
-  TextStyle paragraphSmall() => copyWith(fontSize: 14, height: 20 / 14);
+  /// 14/150
+  TextStyle h6() => copyWith(fontSize: 14, height: 14 / 150);
 
-  /// 14/16
-  TextStyle small() => copyWith(fontSize: 14, height: 16 / 14);
-
-  /// 12/16
-  TextStyle xSmall() => copyWith(fontSize: 12, height: 16 / 12);
-
-  /// 10/16
-  TextStyle tiny() => copyWith(fontSize: 10, height: 16 / 10);
-
-  /// 10/12
-  TextStyle mTiny() => copyWith(fontSize: 10, height: 12 / 10);
+  /// 12/150
+  TextStyle h7() => copyWith(fontSize: 12, height: 12 / 150);
 
   // Font Weight
   TextStyle fw400() => copyWith(fontWeight: FontWeight.w400);
@@ -43,9 +36,15 @@ extension AppTextStyles on TextStyle {
   TextStyle fw800() => copyWith(fontWeight: FontWeight.w800);
 
 // Font Color
-// TextStyle fcR1() => copyWith(color: AppColors.R1);
-//
-// TextStyle fcR2() => copyWith(color: AppColors.R2);
-//
-// TextStyle fcR3() => copyWith(color: AppColors.R3);
+  TextStyle fcW() => copyWith(color: AppColors.white);
+
+  TextStyle fcPr100() => copyWith(color: AppColors.primary100);
+
+  TextStyle fcPr70() => copyWith(color: AppColors.primary70);
+
+  TextStyle fcPr40() => copyWith(color: AppColors.primary40);
+
+  TextStyle fcSecondary() => copyWith(color: AppColors.secondary);
+
+  TextStyle fcInActive() => copyWith(color: AppColors.inactive);
 }

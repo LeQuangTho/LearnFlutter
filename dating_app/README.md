@@ -1,24 +1,57 @@
-# Dating App
+# Dating App ❤️
 
-[![wakatime](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4.svg)](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4)
+[![wakatime](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4.svg)](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4) [![CodeFactor](https://www.codefactor.io/repository/github/toilathor/learnflutter/badge)](https://www.codefactor.io/repository/github/toilathor/learnflutter)
 
 Dating là app do toilathor viết nên là tôi viết document bằng tiếng Việt luôn ôkéee...😄🚀️😕🎉️
 
 Đây sẽ là project mang tính chất dựng base dự trên bloc.
 
+Project này đang được viết trên **Flutter 3.3.9 • channel stable** - **Tools • Dart 2.18.5 • DevTools 2.15.0**
+
 ## Getting Started
 
 Chưa có nội dung gì ở đây cả..
 
-### Firebase :firebase:
+### Firebase
 
-Chưa có nội dung gì ở đây cả..
+> Việc setup Firebase sẽ thuận tiện hơn nếu sử dụng MacOS. Setup trên Windowns thường phải khởi động
+> lại máy ở một số bước không được nhắc tới trước nên sẽ có phần rắc rối hơn.
 
 ### Build Runner
 
 ```shell
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
+
+Sử dụng build_runner cho các mục đích như:
+
+* Gen model ([json_serializable](https://pub.dev/packages/json_serializable))
+* Gen Icon Launcher App ([flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons))
+* Gen asset trong project ([flutter_gen](https://pub.dev/packages/flutter_gen))
+* Gen Splash screen ([flutter_native_splash](https://pub.dev/packages/flutter_native_splash))
+
+### Tool
+
+#### Dart Barrel File Generator
+
+Sử dụng tool này để gom các file trong 1 folder lại để clean import
+
+* Để cài đặt cho [AndroidS Studio](https://plugins.jetbrains.com/plugin/18980-dart-barrel-file-generator)
+* Dành cho [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=miquelddg.dart-barrel-file-generator&ssr=false#overview)
+
+#### APP ICON GENERATOR
+
+[IconKitchen](https://icon.kitchen)
+
+Trang web này sẽ hỗ trợ chúng ta trong việc gen Icon Launcher App với đầy đử kích thước, hệ điều
+hành,...
+
+#### App marketing
+
+[AppsFlyer](https://www.appsflyer.com)
+
+AppsFlyer sẽ giúp cho việc sử dụng deeplink hiệu quả hơn, và còn tính năng
+khác mà Apps Flyer cung cấp
 
 ### Code Convention
 
@@ -27,7 +60,8 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 
 #### Naming convention:
 
-Classes, enums, typedefs, và extensions nên được đặt tên với ký tự đầu mỗi từ được viết hoa: Ex: UpperCamelCase
+Classes, enums, typedefs, và extensions nên được đặt tên với ký tự đầu mỗi từ được viết hoa:
+Ex: UpperCamelCase
 
 ```none
 class MainScreen { ... }
@@ -36,14 +70,16 @@ typedef Predicate<T> = bool Function(T value);
 extension MyList<T> on List<T> { ... }
 ```
 
-Libraries, packages, directories, và source files thì nên viết thường và có dấu gạch dưới giữa 2 tuwf: Ex: lowercase_with_underscores
+Libraries, packages, directories, và source files thì nên viết thường và có dấu gạch dưới giữa 2 từ:
+Ex: lowercase_with_underscores
 
 ```none
 library firebase_dynamic_links;
 import 'socket/socket_manager.dart';
 ```
 
-Variables, constants, parameters, và named parameters sẽ tương tự như Class nhưng ký tự đầu tiên sẽ viết thường : Ex: lowerCamelCase
+Variables, constants, parameters, và named parameters sẽ tương tự như Class nhưng ký tự đầu tiên sẽ
+viết thường : Ex: lowerCamelCase
 
 ```none
 var item;
@@ -56,7 +92,8 @@ void sum(int bookPrice) {
 
 #### relative imports for files in lib
 
-Để tránh nhầm lẫn khi cùng một class được import bằng 2 cách khác nhau thì nên sử dụng relative import
+Để tránh nhầm lẫn khi cùng một class được import bằng 2 cách khác nhau thì nên sử dụng relative
+import
 
 ```none
 // Don't
@@ -69,7 +106,8 @@ import '../../../utils/dialog_utils.dart';
 
 #### Specify types for class member
 
-Nhớ rằng luôn luôn khai báo kiểu của member nếu như kiểu của nó được xác định, hạn chế khai báo kiểu var
+Nhớ rằng luôn luôn khai báo kiểu của member nếu như kiểu của nó được xác định, hạn chế khai báo kiểu
+var
 
 ```none
 
@@ -101,7 +139,8 @@ if (item is Animal)
 
 #### Use if condition instead of conditional expression
 
-Nếu gặp phải trường hợp cần render dựa vào một điều kiện nào đó thì nên sử dụng lệnh if thay cho conditional expression
+Nếu gặp phải trường hợp cần render dựa vào một điều kiện nào đó thì nên sử dụng lệnh if thay cho
+conditional expression
 
 ```none
 
@@ -196,7 +235,8 @@ var s = r'This is demo string \ and $';
 
 #### Don’t explicitly initialize variables null
 
-Mặc định khi khai báo không có value thì memeber sẽ mang giá trị null nên việc khai báo null là không cần thiết
+Mặc định khi khai báo không có value thì memeber sẽ mang giá trị null nên việc khai báo null là
+không cần thiết
 
 ```none
 
@@ -231,7 +271,8 @@ Widget getProgressBar() => CircularProgressIndicator(
 
 #### Split widget into different Widgets.
 
-Khi setState() called trong một state thì tất cả widget con sẽ rebuild nên ở đây chúng ta nên chia nhỏ các widget và gọi setState trong mỗi widget đó để đảm bảo performance
+Khi setState() called trong một state thì tất cả widget con sẽ rebuild nên ở đây chúng ta nên chia
+nhỏ các widget và gọi setState trong mỗi widget đó để đảm bảo performance
 
 ```none
 Scaffold(
