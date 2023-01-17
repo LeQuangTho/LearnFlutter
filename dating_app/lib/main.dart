@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'src/core/bloc/app_bloc_observice.dart';
+import 'src/core/bloc/app_blocs_provider.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = AppBlocObserver();
+
+  runApp(
+    MultiBlocProvider(
+      providers: AppBlocs.blocProviders,
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

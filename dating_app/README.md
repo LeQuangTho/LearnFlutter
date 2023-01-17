@@ -19,8 +19,20 @@ Chưa có nội dung gì ở đây cả..
 
 ### Build Runner
 
+Gen all project
 ```shell
 flutter packages pub run build_runner build --delete-conflicting-outputs
+```
+
+Gen Splash Screen
+```shell
+flutter pub run flutter_native_splash:create --path=native_splash.yaml
+```
+
+Gen Icon App
+```shell
+flutter pub get
+flutter pub run flutter_launcher_icons:main
 ```
 
 Sử dụng build_runner cho các mục đích như:
@@ -48,7 +60,7 @@ hành,...
 
 #### App marketing
 
-[AppsFlyer](https://www.appsflyer.com)
+[AppsFlyer](https://www.appsflyer.com)✈️
 
 AppsFlyer sẽ giúp cho việc sử dụng deeplink hiệu quả hơn, và còn tính năng
 khác mà Apps Flyer cung cấp

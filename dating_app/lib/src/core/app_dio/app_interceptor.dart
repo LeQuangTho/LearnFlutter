@@ -6,11 +6,11 @@ import 'default_retry_evaluator.dart';
 import 'http_status_codes.dart';
 
 class AppDio {
-  AppDio._internal();
 
   factory AppDio() {
     return _instance;
   }
+  AppDio._internal();
 
   // static const String host = 'http://';
 
@@ -100,7 +100,7 @@ class AppInterceptorSmartRetry extends Interceptor {
       DefaultRetryEvaluator(defaultRetryableStatuses).evaluate;
 
   @override
-  void onResponse(Response response, ResponseInterceptorHandler handler) async {
+  Future<void> onResponse(Response<dynamic> response, ResponseInterceptorHandler handler) async {
     if (response.statusCode != 200) {
       super.onResponse(response, handler);
     } else {
@@ -163,7 +163,9 @@ class AppInterceptorSmartRetry extends Interceptor {
   }
 
   Duration _getDelay(int attempt) {
-    if (retryDelays.isEmpty) return Duration.zero;
+    if (retryDelays.isEmpty) {
+      return Duration.zero;
+    }
     return attempt - 1 < retryDelays.length
         ? retryDelays[attempt - 1]
         : retryDelays.last;

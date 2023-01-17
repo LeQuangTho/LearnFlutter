@@ -1,8 +1,8 @@
 # flutter_native_splash-production.yaml
 flutter_native_splash:
-  color: "#2934D0"
+  color: "#FFFFFFFF"
   image: assets/ic_launcher.png
-  color_dark: "#2934D0"
+  color_dark: "#FFFFFFFF"
   image_dark: assets/ic_launcher.png
 
 #  android_12:
