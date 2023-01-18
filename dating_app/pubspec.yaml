@@ -1,4 +1,4 @@
-name: dating_app
+name: dating_now
 description: A new Flutter project.
 
 version: 1.0.0+1
@@ -53,14 +53,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  args: ^2.3.1
   flutter_lints: ^2.0.1
   build_runner: ^2.3.3
   hive_generator: ^2.0.0
   json_annotation: ^4.7.0
   flutter_gen_runner: ^5.1.0+1
   flutter_launcher_icons: ^0.11.0
-  flutter_native_splash: ^2.2.17
+  flutter_native_splash: ^2.2.16
 
 flutter:
   uses-material-design: true
@@ -84,3 +83,11 @@ flutter_gen:
   integrations:
     flutter_svg: true
     flare_flutter: false
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/ic_launcher.png"
+#  adaptive_icon_background: "#ffffff" #"#ec407a"
+#  adaptive_icon_foreground: "assets/ic_launcher_light.png"

@@ -192,24 +192,9 @@ class $AssetsImagesGen {
   AssetGenImage get imgPeople =>
       const AssetGenImage('assets/images/img_people.png');
 
-  /// File path: assets/images/img_tinder.png
-  AssetGenImage get imgTinder =>
-      const AssetGenImage('assets/images/img_tinder.png');
-
-  /// File path: assets/images/img_trademark.png
-  AssetGenImage get imgTrademark =>
-      const AssetGenImage('assets/images/img_trademark.png');
-
   /// List of all assets
-  List<AssetGenImage> get values => [
-        imgChat,
-        imgGirl1,
-        imgGirl2,
-        imgGirl3,
-        imgPeople,
-        imgTinder,
-        imgTrademark
-      ];
+  List<AssetGenImage> get values =>
+      [imgChat, imgGirl1, imgGirl2, imgGirl3, imgPeople];
 }
 
 class Assets {
@@ -217,11 +202,16 @@ class Assets {
 
   static const AssetGenImage icLauncher =
       AssetGenImage('assets/ic_launcher.png');
+  static const AssetGenImage icLauncherDark =
+      AssetGenImage('assets/ic_launcher_dark.png');
+  static const AssetGenImage icLauncherLight =
+      AssetGenImage('assets/ic_launcher_light.png');
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 
   /// List of all assets
-  List<AssetGenImage> get values => [icLauncher];
+  List<AssetGenImage> get values =>
+      [icLauncher, icLauncherDark, icLauncherLight];
 }
 
 class AssetGenImage {
