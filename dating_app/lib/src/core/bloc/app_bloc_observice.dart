@@ -6,7 +6,7 @@ import '../../helpers/app_helpers.dart';
 class AppBlocObserver extends BlocObserver {
   @override
   void onEvent(Bloc<dynamic, dynamic> bloc, Object? event) {
-    UtilLogger.log('DH BLOC EVENT', event);
+    UtilLogger.log('BLOC EVENT', event);
     super.onEvent(bloc, event);
   }
 
