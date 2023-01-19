@@ -11,13 +11,4 @@ class UtilLogger {
       developer.log('$msg', name: tag);
     }
   }
-
-  ///Singleton factory
-  static final UtilLogger _instance = UtilLogger._internal();
-
-  factory UtilLogger() {
-    return _instance;
-  }
-
-  UtilLogger._internal();
 }

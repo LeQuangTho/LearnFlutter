@@ -8,7 +8,7 @@ import 'transition_routes.dart';
 
 class AppNavigator {
   static final GlobalKey<NavigatorState> navigatorKey =
-  GlobalKey<NavigatorState>();
+      GlobalKey<NavigatorState>();
 
   static Route<dynamic>? getRoute(RouteSettings settings) {
     Map<String, dynamic> arguments = _getArguments(settings);
@@ -26,9 +26,9 @@ class AppNavigator {
   }
 
   static AppMaterialPageRoute<dynamic> _buildRoute(
-      RouteSettings routeSettings,
-      Widget builder,
-      ) {
+    RouteSettings routeSettings,
+    Widget builder,
+  ) {
     return AppMaterialPageRoute(
       builder: (context) => builder,
       settings: routeSettings,
@@ -43,27 +43,27 @@ class AppNavigator {
   }
 
   static Future<dynamic> push<T>(
-      String route, {
-        Object? arguments,
-      }) {
+    String route, {
+    Object? arguments,
+  }) {
     return state.pushNamed(route, arguments: arguments);
   }
 
   static Future<dynamic> pushNamedAndRemoveUntil<T>(
-      String route, {
-        Object? arguments,
-      }) {
+    String route, {
+    Object? arguments,
+  }) {
     return state.pushNamedAndRemoveUntil(
       route,
-          (route) => false,
+      (route) => false,
       arguments: arguments,
     );
   }
 
   static Future<dynamic> replaceWith<T>(
-      String route, {
-        Map<String, dynamic>? arguments,
-      }) {
+    String route, {
+    Map<String, dynamic>? arguments,
+  }) {
     return state.pushReplacementNamed(route, arguments: arguments);
   }
 

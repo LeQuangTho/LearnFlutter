@@ -3,20 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rxdart/rxdart.dart';
 
 class AppBlocs {
-  factory AppBlocs() {
-    return _instance;
-  }
-
-  AppBlocs._internal();
-
   static void runApp() {
     cleanBloc();
   }
 
   static void cleanBloc() {}
-
-  /// Singleton Factory
-  static final AppBlocs _instance = AppBlocs._internal();
 
   /// Define all Bloc
   static final HomeBloc homeBloc = HomeBloc();

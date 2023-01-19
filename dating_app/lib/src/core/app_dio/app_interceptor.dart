@@ -6,20 +6,11 @@ import 'default_retry_evaluator.dart';
 import 'http_status_codes.dart';
 
 class AppDio {
-
-  factory AppDio() {
-    return _instance;
-  }
-  AppDio._internal();
-
   // static const String host = 'http://';
 
   late Options _optionForLogin;
 
   Options get optionForLogin => _optionForLogin;
-
-  /// Singleton Factory
-  static final AppDio _instance = AppDio._internal();
 }
 
 class AppInterceptorNoCatchError extends Interceptor {}
@@ -100,7 +91,8 @@ class AppInterceptorSmartRetry extends Interceptor {
       DefaultRetryEvaluator(defaultRetryableStatuses).evaluate;
 
   @override
-  Future<void> onResponse(Response<dynamic> response, ResponseInterceptorHandler handler) async {
+  Future<void> onResponse(
+      Response<dynamic> response, ResponseInterceptorHandler handler) async {
     if (response.statusCode != 200) {
       super.onResponse(response, handler);
     } else {

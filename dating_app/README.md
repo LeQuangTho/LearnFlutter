@@ -1,4 +1,4 @@
-# Dating App ❤️
+# Dating App ❤️ 🇻🇳
 
 [![wakatime](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4.svg)](https://wakatime.com/badge/user/dbffe694-c211-47a5-82ed-ff362b1a7a4a/project/b84a69e5-3a93-4554-ac83-4cb81cc2a0b4) [![CodeFactor](https://www.codefactor.io/repository/github/toilathor/learnflutter/badge)](https://www.codefactor.io/repository/github/toilathor/learnflutter)
 
@@ -12,24 +12,32 @@ Project này đang được viết trên **Flutter 3.3.9 • channel stable** - 
 
 Chưa có nội dung gì ở đây cả..
 
-### Firebase
+### Firebase 🔥
 
 > Việc setup Firebase sẽ thuận tiện hơn nếu sử dụng MacOS. Setup trên Windowns thường phải khởi động
 > lại máy ở một số bước không được nhắc tới trước nên sẽ có phần rắc rối hơn.
 
-### Build Runner
+### GetIt
+
+> Sử dụng GetIt nhằm mục đích quản lý  các **instance**
+
+Nhìn chung sẽ chủ yếu sử dụng
+1. **registerLazySingleton** để khởi tạo các class như 1 một cách global
+2. **registerFactory** sẽ được khởi tạo lại từ đầu  khi gọi
+
+### Build Runner ⚙️
 
 Gen all project
 ```shell
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
-Gen Splash Screen
+Gen Splash Screen 📱
 ```shell
 flutter pub run flutter_native_splash:create --path=native_splash.yaml
 ```
 
-Gen Icon App
+Gen Icon App 🫠
 ```shell
 flutter pub get
 flutter pub run flutter_launcher_icons:main
@@ -48,8 +56,8 @@ Sử dụng build_runner cho các mục đích như:
 
 Sử dụng tool này để gom các file trong 1 folder lại để clean import
 
-* Để cài đặt cho [AndroidS Studio](https://plugins.jetbrains.com/plugin/18980-dart-barrel-file-generator)
-* Dành cho [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=miquelddg.dart-barrel-file-generator&ssr=false#overview)
+* Để cài đặt cho [Android Studio](https://plugins.jetbrains.com/plugin/18980-dart-barrel-file-generator)
+* Để cài đặt cho [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=miquelddg.dart-barrel-file-generator&ssr=false#overview)
 
 #### APP ICON GENERATOR
 
@@ -60,12 +68,16 @@ hành,...
 
 #### App marketing
 
-[AppsFlyer](https://www.appsflyer.com)✈️
+[AppsFlyer](https://www.appsflyer.com)  ✈️
 
 AppsFlyer sẽ giúp cho việc sử dụng deeplink hiệu quả hơn, và còn tính năng
 khác mà Apps Flyer cung cấp
 
 ### Code Convention
+
+Trong quá trình code cần hạn chế tối đa việc copy code, cần phân tích xem có những màn hình nào sử dụng chung,
+các **Widget** sử dụng chung để có thể tách ra thành các component **common** để tái sử dụng lại . Điều này sẽ rất hữu ích
+trong quá trình **maintenance**
 
 <details>
 <summary>Click to expand!</summary>

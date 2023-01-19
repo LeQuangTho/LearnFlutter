@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: GestureDetector(
-          onTap: (){
+          onTap: () {
             AppBlocs.homeBloc.add(TapImageEvent());
           },
           child: Center(
