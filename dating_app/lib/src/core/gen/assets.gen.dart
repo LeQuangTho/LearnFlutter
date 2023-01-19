@@ -35,6 +35,9 @@ class $AssetsIconsGen {
   SvgGenImage get icCloseSmall =>
       const SvgGenImage('assets/icons/ic_close_small.svg');
 
+  /// File path: assets/icons/ic_dicator.svg
+  SvgGenImage get icDicator => const SvgGenImage('assets/icons/ic_dicator.svg');
+
   /// File path: assets/icons/ic_done_all.svg
   SvgGenImage get icDoneAll =>
       const SvgGenImage('assets/icons/ic_done_all.svg');
@@ -138,6 +141,7 @@ class $AssetsIconsGen {
         icCamera2,
         icCards,
         icCloseSmall,
+        icDicator,
         icDoneAll,
         icFacebook,
         icGameHandle,

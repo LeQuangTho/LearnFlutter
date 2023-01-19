@@ -12,32 +12,44 @@ Project này đang được viết trên **Flutter 3.3.9 • channel stable** - 
 
 Chưa có nội dung gì ở đây cả..
 
-### Firebase 🔥
+### [Firebase](https://firebase.flutter.dev/) 
+
+![Firebase Flutter](https://firebase.flutter.dev/img/flutterfire_300x.png)
 
 > Việc setup Firebase sẽ thuận tiện hơn nếu sử dụng MacOS. Setup trên Windowns thường phải khởi động
 > lại máy ở một số bước không được nhắc tới trước nên sẽ có phần rắc rối hơn.
 
-### GetIt
+### [Screen Util](https://pub.dev/packages/flutter_screenutil)
+
+> Đây là một thư viện giúp cho việc xác định kích thước dễ dàng hơn.
+> nó bao gồm các tiện ích như: lấy hướng xoay, tự động scale theo size design, lấy kích thước theo %
+> màn hình,...
+
+### [GetIt](https://pub.dev/packages/get_it)
 
 > Sử dụng GetIt nhằm mục đích quản lý  các **instance**
 
 Nhìn chung sẽ chủ yếu sử dụng
+
 1. **registerLazySingleton** để khởi tạo các class như 1 một cách global
 2. **registerFactory** sẽ được khởi tạo lại từ đầu  khi gọi
 
 ### Build Runner ⚙️
 
-Gen all project
+#### Gen all project
+
 ```shell
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
-Gen Splash Screen 📱
+#### [Gen Splash Screen](https://pub.dev/packages/flutter_native_splash) 📱
+
 ```shell
 flutter pub run flutter_native_splash:create --path=native_splash.yaml
 ```
 
-Gen Icon App 🫠
+#### [Gen Icon App](https://pub.dev/packages/flutter_launcher_icons) 🫠
+
 ```shell
 flutter pub get
 flutter pub run flutter_launcher_icons:main

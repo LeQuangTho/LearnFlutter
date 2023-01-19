@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sizer/sizer.dart';
 
 import 'locator.dart';
 import 'src/app_navigator/app_navigator.dart';
@@ -37,42 +36,41 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Sizer(
-      builder: (context, orientation, deviceType) => ScreenUtilInit(
-        builder: (context, child) => MaterialApp(
-          title: 'Dating Now',
-          home: HomePage(),
-          builder: (context, child) {
-            return MediaQuery(
-              data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
-              child: child!,
-            );
-          },
-          theme: ThemeData(
-            backgroundColor: Colors.transparent,
-            scaffoldBackgroundColor: Colors.transparent,
-            primaryColor: Colors.transparent,
-            brightness: Brightness.light,
-            appBarTheme: AppBarTheme(backgroundColor: Colors.transparent),
-            iconTheme: IconThemeData(),
-            fontFamily: FontFamily.skModernist,
-          ),
-          navigatorKey: AppNavigator.navigatorKey,
-          supportedLocales: const [
-            Locale('vi', 'VN'),
-            // Locale('en', 'US'),
-          ],
-          localizationsDelegates: const [
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          onGenerateRoute: AppNavigator.getRoute,
-          navigatorObservers: [
-            AppNavigatorObserver(),
-          ],
-          debugShowCheckedModeBanner: false,
+    return ScreenUtilInit(
+      designSize: Size(375, 812),
+      builder: (context, child) => MaterialApp(
+        title: 'Dating Now',
+        home: HomePage(),
+        builder: (context, child) {
+          return MediaQuery(
+            data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+            child: child!,
+          );
+        },
+        theme: ThemeData(
+          backgroundColor: Colors.transparent,
+          scaffoldBackgroundColor: Colors.transparent,
+          primaryColor: Colors.transparent,
+          brightness: Brightness.light,
+          appBarTheme: AppBarTheme(backgroundColor: Colors.transparent),
+          iconTheme: IconThemeData(),
+          fontFamily: FontFamily.skModernist,
         ),
+        navigatorKey: AppNavigator.navigatorKey,
+        supportedLocales: const [
+          Locale('vi', 'VN'),
+          // Locale('en', 'US'),
+        ],
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        onGenerateRoute: AppNavigator.getRoute,
+        navigatorObservers: [
+          AppNavigatorObserver(),
+        ],
+        debugShowCheckedModeBanner: false,
       ),
     );
   }

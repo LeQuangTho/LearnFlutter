@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'app_color.dart';
 
 extension AppTextStyles on TextStyle {
+  //Line Height = 1
+  TextStyle lineHei1() => copyWith(height: 1);
+
   /// 34/150
   TextStyle h1() => copyWith(fontSize: 34, height: 34 / 150);
 
@@ -35,16 +38,8 @@ extension AppTextStyles on TextStyle {
 
   TextStyle fw800() => copyWith(fontWeight: FontWeight.w800);
 
-// Font Color
+  // Font Color
   TextStyle fcW() => copyWith(color: AppColors.white);
 
-  TextStyle fcPr100() => copyWith(color: AppColors.primary100);
-
-  TextStyle fcPr70() => copyWith(color: AppColors.primary70);
-
-  TextStyle fcPr40() => copyWith(color: AppColors.primary40);
-
-  TextStyle fcSecondary() => copyWith(color: AppColors.secondary);
-
-  TextStyle fcInActive() => copyWith(color: AppColors.inactive);
+  TextStyle fcR() => copyWith(color: AppColors.red);
 }
