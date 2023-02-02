@@ -1,6 +1,5 @@
+import 'package:dating_now/src/core/styles/app_color.dart';
 import 'package:flutter/material.dart';
-
-import 'app_color.dart';
 
 class AppBoxShadows {
   static final List<BoxShadow> red = [

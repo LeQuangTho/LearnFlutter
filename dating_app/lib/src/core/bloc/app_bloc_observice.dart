@@ -1,6 +1,5 @@
+import 'package:dating_now/src/helpers/app_helpers.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../helpers/app_helpers.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override

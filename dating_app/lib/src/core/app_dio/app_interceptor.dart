@@ -1,9 +1,8 @@
 import 'dart:async';
 
+import 'package:dating_now/src/core/app_dio/default_retry_evaluator.dart';
+import 'package:dating_now/src/core/app_dio/http_status_codes.dart';
 import 'package:dio/dio.dart';
-
-import 'default_retry_evaluator.dart';
-import 'http_status_codes.dart';
 
 class AppDio {
   // static const String host = 'http://';

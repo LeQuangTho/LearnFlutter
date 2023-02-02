@@ -1,7 +1,7 @@
 import 'dart:developer' as developer;
 
-import 'app_helpers.dart';
-import 'constants/app_data.dart';
+import 'package:dating_now/src/helpers/app_helpers.dart';
+import 'package:dating_now/src/helpers/constants/app_data.dart';
 
 class UtilLogger {
   static const String TAG = 'SALE-BOLT';

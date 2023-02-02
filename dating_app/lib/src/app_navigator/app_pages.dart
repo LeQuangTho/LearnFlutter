@@ -1,17 +1,16 @@
+import 'package:dating_now/main.dart';
+import 'package:dating_now/src/app_navigator/app_navigator_observer.dart';
+import 'package:dating_now/src/app_navigator/app_routes.dart';
+import 'package:dating_now/src/app_navigator/transition_routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../main.dart';
-import 'app_navigator_observer.dart';
-import 'app_routes.dart';
-import 'transition_routes.dart';
 
 class AppNavigator {
   static final GlobalKey<NavigatorState> navigatorKey =
       GlobalKey<NavigatorState>();
 
   static Route<dynamic>? getRoute(RouteSettings settings) {
-    Map<String, dynamic> arguments = _getArguments(settings);
+    final Map<String, dynamic> arguments = _getArguments(settings);
 
     switch (settings.name) {
       // Define Navigator Page

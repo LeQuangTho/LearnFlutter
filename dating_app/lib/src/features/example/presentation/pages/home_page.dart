@@ -1,10 +1,9 @@
 import 'package:dating_now/src/core/app_common_widgets/buttons/button_primary.dart';
 import 'package:dating_now/src/core/app_common_widgets/buttons/button_primary_icon.dart';
 import 'package:dating_now/src/core/core.dart';
+import 'package:dating_now/src/features/example/presentation/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../bloc/home_bloc.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

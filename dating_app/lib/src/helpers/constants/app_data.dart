@@ -1,4 +1,4 @@
-import '../app_helpers.dart';
+import 'package:dating_now/src/helpers/app_helpers.dart';
 
 class AppData {
   /// [Production - DEV]

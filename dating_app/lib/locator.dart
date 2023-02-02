@@ -1,9 +1,8 @@
+import 'package:dating_now/src/core/app_dio/app_dio.dart';
 import 'package:dating_now/src/core/bloc/app_blocs_provider.dart';
 import 'package:dating_now/src/helpers/app_helpers.dart';
 import 'package:dating_now/src/helpers/constants/app_data.dart';
 import 'package:get_it/get_it.dart';
-
-import 'src/core/app_dio/app_dio.dart';
 
 final getIt = GetIt.instance;
 

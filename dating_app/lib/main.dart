@@ -1,14 +1,13 @@
+import 'package:dating_now/locator.dart';
+import 'package:dating_now/src/app_navigator/app_navigator.dart';
+import 'package:dating_now/src/core/bloc/app_bloc_observice.dart';
+import 'package:dating_now/src/core/bloc/app_blocs_provider.dart';
 import 'package:dating_now/src/core/gen/fonts.gen.dart';
+import 'package:dating_now/src/features/example/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'locator.dart';
-import 'src/app_navigator/app_navigator.dart';
-import 'src/core/bloc/app_bloc_observice.dart';
-import 'src/core/bloc/app_blocs_provider.dart';
-import 'src/features/example/presentation/pages/home_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
