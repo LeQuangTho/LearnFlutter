@@ -1,0 +1,7 @@
+Executable : C:\Users\tiennn\AppData\Local\Android\sdk\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+C:\Users\tiennn\Downloads\ekyc_flutter_sdk-native_ai_flow\ekyc_flutter_sdk-native_ai_flow\android\.cxx\Debug\4o122f3b\armeabi-v7a
+convertImage
+jvmArgs : 
+

@@ -1,0 +1,140 @@
+name: hdsaison_signing
+description: A new Flutter project.
+
+publish_to: "none"
+version: 1.0.2+8
+
+environment:
+  sdk: ">=2.15.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.3
+
+  # Core
+  # flutter_bloc: ^7.3.3
+  flutter_bloc: ^8.1.1
+#  camera: ^0.9.7+1
+  flutter_pdfview: ^1.2.2
+  advance_pdf_viewer: ^2.0.1
+  local_auth: ^2.1.0
+  flutter_secure_storage: ^5.0.2
+
+  # Local Storage
+  hive: ^2.0.5
+  path_provider: ^2.0.10
+  file_picker:
+  image_picker: ^0.8.4
+  equatable: ^2.0.5
+  shared_preferences: ^2.0.15
+
+  # Network
+  dio: ^4.0.0
+  pretty_dio_logger: ^1.1.1
+  connectivity: ^3.0.6
+  dart_ipify: ^1.1.1
+  device_info_plus: ^3.2.0
+  package_info_plus: ^1.4.2
+  firebase_core: ^1.17.1
+  firebase_dynamic_links: ^4.2.5
+  firebase_messaging: ^11.4.1
+  # get firebase token
+  flutter_local_notifications: ^12.0.3
+
+  # Untils
+  flutter_launcher_icons: ^0.10.0
+  intl: ^0.17.0
+  i18n_extension: ^4.2.0
+  geolocator: ^9.0.2
+  logging_appenders: ^1.0.0
+  share_plus:
+  url_launcher: ^6.1.6
+  permission_handler: ^10.1.0
+  scrollable_positioned_list: ^0.3.5
+  pull_to_refresh: ^2.0.0
+  flutter_html:
+  timeago: ^3.3.0
+
+  # UI Untils
+  dotted_border: ^2.0.0+1
+  flutter_signature_pad: ^3.0.0
+  onboarding: ^3.1.0
+  flutter_datetime_picker: ^1.5.1
+  flag: ^6.0.0
+  flutter_svg: ^1.1.0
+  pin_code_fields: ^7.3.0
+  cached_network_image: ^3.0.0
+  flutter_switch: ^0.3.2
+  flutter_spinkit: ^5.1.0
+  flutter_screenutil: ^5.5.2
+  fluttertoast: ^8.0.9
+  webview_flutter: ^2.8.0
+  share_plus_web: ^3.1.0
+  video_player: ^2.4.7
+  sample_sdk_flutter:
+#    path: /Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/sample_sdk_flutter
+    path: ../mobile-app/sdk_ekyc/sample_sdk_flutter
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.0.6
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/files/
+
+  fonts:
+    - family: BeVN
+      fonts:
+        # Header
+        - asset: assets/fonts/be_vn/BeVietnamPro-Medium.ttf
+          weight: 500
+        # Title
+        - asset: assets/fonts/be_vn/BeVietnamPro-SemiBold.ttf
+          weight: 600
+        # Subtitle regular
+        - asset: assets/fonts/be_vn/BeVietnamPro-Regular.ttf
+          weight: 400
+        # Subtitle medium
+        - asset: assets/fonts/be_vn/BeVietnamPro-Medium.ttf
+          weight: 500
+        # Subtitle bold
+        - asset: assets/fonts/be_vn/BeVietnamPro-Bold.ttf
+          weight: 600
+        # Body regular
+        - asset: assets/fonts/be_vn/BeVietnamPro-Regular.ttf
+          weight: 400
+        # Body medium
+        # Body bold
+        # Sub-body regular
+        # Sub-body medium
+        # Sub-body bold
+        # Description regular
+        # Description medium
+        # Description bold
+        # Caption
+        # Caption
+
+        - asset: assets/fonts/be_vn/BeVietnamPro-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/be_vn/BeVietnamPro-Light.ttf
+          weight: 300
+        # Semi bold
+        - asset: assets/fonts/be_vn/BeVietnamPro-SemiBoldItalic.ttf
+          weight: 600
+          style: italic

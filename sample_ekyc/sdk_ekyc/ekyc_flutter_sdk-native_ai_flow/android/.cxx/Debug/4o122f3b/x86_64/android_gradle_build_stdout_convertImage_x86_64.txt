@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\tiennn\Downloads\ekyc_flutter_sdk-native_ai_flow\ekyc_flutter_sdk-native_ai_flow\android\.cxx\Debug\4o122f3b\x86_64'
+ninja: no work to do.

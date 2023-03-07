@@ -1,0 +1,5 @@
+# ninja log v5
+0	155	690099262	CMakeFiles/convertImage.dir/C_/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/ios/Classes/converter.c.o	7d6797c70adb1fef
+157	249	690099262	C:/Users/tiennn/Documents/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	19ef8d6ec1ad3d1e
+0	163	690963333	CMakeFiles/convertImage.dir/C_/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/ios/Classes/converter.c.o	7d6797c70adb1fef
+163	396	690963333	C:/Users/tiennn/Documents/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/arm64-v8a/libconvertImage.so	19ef8d6ec1ad3d1e

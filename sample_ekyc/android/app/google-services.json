@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810658624559",
+    "project_id": "hdsaison-signing",
+    "storage_bucket": "hdsaison-signing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810658624559:android:1b37ce6a6a54f34157c2da",
+        "android_client_info": {
+          "package_name": "com.hdsaison.signing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810658624559-vnvgjhj0srg3mfbfkhb9a8igbuuqe7ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATjU43h1IaPxV0gp87i5Kp2gm-YAxZxHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810658624559-vnvgjhj0srg3mfbfkhb9a8igbuuqe7ht.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "810658624559-sene56u2t9mo9jfga2onrgar2230atae.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hdsaison.signing",
+                "app_store_id": "6443712352"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

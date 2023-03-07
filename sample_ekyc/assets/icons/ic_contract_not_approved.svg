@@ -1,0 +1,25 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="paint0_linear_6033_24481" x1="11.995" y1="4.15039" x2="11.9961" y2="18.8151" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EF5350"/>
+<stop offset="1" stop-color="#F44336"/>
+</linearGradient>
+<linearGradient id="paint1_linear_6033_24481" x1="11.995" y1="2.5" x2="11.9952" y2="6.25608" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EF5350"/>
+<stop offset="1" stop-color="#F44336"/>
+</linearGradient>
+<linearGradient id="paint2_linear_6033_24481" x1="12" y1="11.9434" x2="12.0003" y2="16.3368" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EF5350"/>
+<stop offset="1" stop-color="#F44336"/>
+</linearGradient>
+<clipPath id="clip0_6033_24481">
+<rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip0_6033_24481)">
+<rect width="24" height="24" transform="translate(0 0.5)" fill="white" fill-opacity="0.01"/>
+<path opacity="0.4" d="M16.24 4.15039H7.76C5.29 4.15039 3.29 6.16039 3.29 8.62039V18.0304C3.29 20.4904 5.3 22.5004 7.76 22.5004H16.23C18.7 22.5004 20.7 20.4904 20.7 18.0304V8.62039C20.71 6.15039 18.7 4.15039 16.24 4.15039Z" fill="url(#paint0_linear_6033_24481)"/>
+<path d="M14.35 2.5H9.65C8.61 2.5 7.76 3.34 7.76 4.38V5.32C7.76 6.36 8.6 7.2 9.64 7.2H14.35C15.39 7.2 16.23 6.36 16.23 5.32V4.38C16.24 3.34 15.39 2.5 14.35 2.5Z" fill="url(#paint1_linear_6033_24481)"/>
+<path d="M14.53 16.1209L13.08 14.6709L14.48 13.2709C14.77 12.9809 14.77 12.5009 14.48 12.2109C14.19 11.9209 13.71 11.9209 13.42 12.2109L12.02 13.6109L10.57 12.1609C10.28 11.8709 9.8 11.8709 9.51 12.1609C9.22 12.4509 9.22 12.9309 9.51 13.2209L10.96 14.6709L9.47 16.1609C9.18 16.4509 9.18 16.9309 9.47 17.2209C9.62 17.3709 9.81 17.4409 10 17.4409C10.19 17.4409 10.38 17.3709 10.53 17.2209L12.02 15.7309L13.47 17.1809C13.62 17.3309 13.81 17.4009 14 17.4009C14.19 17.4009 14.38 17.3309 14.53 17.1809C14.82 16.8909 14.82 16.4209 14.53 16.1209Z" fill="url(#paint2_linear_6033_24481)"/>
+</g>
+</svg>

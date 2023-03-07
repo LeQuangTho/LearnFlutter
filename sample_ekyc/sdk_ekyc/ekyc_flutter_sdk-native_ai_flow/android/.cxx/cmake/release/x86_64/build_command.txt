@@ -1,0 +1,21 @@
+                Executable : /Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android
+-DCMAKE_FIND_ROOT_PATH=/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/prefab/x86_64/prefab
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=/Users/idist/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=/Users/idist/Library/Android/sdk/ndk/21.1.6352462
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DCMAKE_ANDROID_NDK=/Users/idist/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Volumes/Savis/HDSaiSon/sources/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/release/obj/x86_64
+-DCMAKE_MAKE_PROGRAM=/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-B/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/x86_64
+-GNinja
+jvmArgs : 
+
+Build command args:

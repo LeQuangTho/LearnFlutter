@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/CMakeLists.txt",
+    "/Users/idist/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/idist/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "convertImage-Release-armeabi-v7a": {
+      "artifactName": "convertImage",
+      "buildCommand": "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" convertImage",
+      "abi": "armeabi-v7a",
+      "output": "/Volumes/Savis/HDSaiSon/sources/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/release/obj/armeabi-v7a/libconvertImage.so",
+      "runtimeFiles": []
+    }
+  }
+}

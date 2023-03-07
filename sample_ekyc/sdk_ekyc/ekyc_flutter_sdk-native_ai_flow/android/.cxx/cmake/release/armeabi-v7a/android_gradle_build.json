@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/idist/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/idist/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DconvertImage_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/CMakeLists.txt",
+    "/Users/idist/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/idist/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "convertImage-Release-armeabi-v7a": {
+      "buildCommand": "/Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/armeabi-v7a\" convertImage",
+      "buildType": "release",
+      "toolchain": "2549002642",
+      "abi": "armeabi-v7a",
+      "artifactName": "convertImage",
+      "files": [
+        {
+          "src": "/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/ios/Classes/converter.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Volumes/Savis/HDSaiSon/sources/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/release/obj/armeabi-v7a/libconvertImage.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2549002642": {
+      "cCompilerExecutable": "/Users/idist/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

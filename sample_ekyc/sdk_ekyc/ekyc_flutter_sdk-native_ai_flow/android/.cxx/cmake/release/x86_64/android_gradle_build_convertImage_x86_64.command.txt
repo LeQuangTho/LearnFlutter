@@ -1,0 +1,7 @@
+Executable : /Users/idist/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/release/x86_64
+convertImage
+jvmArgs : 
+
