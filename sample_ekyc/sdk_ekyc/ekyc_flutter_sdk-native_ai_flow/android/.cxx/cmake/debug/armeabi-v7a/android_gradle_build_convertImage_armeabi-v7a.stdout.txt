@@ -1,2 +1,2 @@
-ninja: Entering directory `C:\Users\tiennn\Documents\mobile-app\sdk_ekyc\ekyc_flutter_sdk-native_ai_flow\android\.cxx\cmake\debug\armeabi-v7a'
+ninja: Entering directory `/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a'
 ninja: no work to do.

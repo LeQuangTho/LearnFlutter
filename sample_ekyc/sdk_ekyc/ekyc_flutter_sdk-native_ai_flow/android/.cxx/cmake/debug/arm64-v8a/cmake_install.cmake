@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android
+# Install script for directory: /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Project")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

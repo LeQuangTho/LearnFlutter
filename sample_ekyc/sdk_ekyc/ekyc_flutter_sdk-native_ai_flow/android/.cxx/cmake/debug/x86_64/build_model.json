@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64",
-    "cmakeServerLogFile": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cxx\\debug\\x86_64",
+    "cmakeArtifactsBaseFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64",
+    "cmakeServerLogFile": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cxx/debug/x86_64",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,13 +15,13 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64",
-      "cmakeToolchain": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
-      "cmakeExecutable": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+      "buildRoot": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64",
+      "cmakeToolchain": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\prefab\\x86_64\\prefab"
+          "value": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/prefab/x86_64/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -29,7 +29,7 @@
         },
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake"
+          "value": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake"
         },
         {
           "name": "ANDROID_ABI",
@@ -37,7 +37,7 @@
         },
         {
           "name": "ANDROID_NDK",
-          "value": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147"
+          "value": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653"
         },
         {
           "name": "ANDROID_PLATFORM",
@@ -49,7 +49,7 @@
         },
         {
           "name": "CMAKE_ANDROID_NDK",
-          "value": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147"
+          "value": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653"
         },
         {
           "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
@@ -57,11 +57,11 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "C:\\Users\\tiennn\\Documents\\mobile-app\\build\\ekyc_flutter_sdk\\intermediates\\cmake\\debug\\obj\\x86_64"
+          "value": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/x86_64"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
-          "value": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+          "value": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
         },
         {
           "name": "CMAKE_SYSTEM_NAME",
@@ -74,14 +74,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64",
+  "cxxBuildFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64",
   "info": {
     "abi": "X86_64",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64",
+  "originalCxxBuildFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -93,24 +93,24 @@
     "module": {
       "buildSystem": "CMAKE",
       "cmake": {
-        "cmakeExe": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+        "cmakeExe": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
         "minimumCmakeVersion": "3.10.2",
-        "ninjaExe": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+        "ninjaExe": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
       },
-      "cmakeToolchainFile": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx",
+      "cmakeToolchainFile": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx",
       "gradleModulePathName": ":ekyc_flutter_sdk",
-      "intermediatesFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\build\\ekyc_flutter_sdk\\intermediates",
-      "makeFile": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\CMakeLists.txt",
-      "moduleBuildFile": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\build.gradle",
-      "moduleRootFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android",
+      "intermediatesFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates",
+      "makeFile": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/CMakeLists.txt",
+      "moduleBuildFile": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/build.gradle",
+      "moduleRootFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147",
+      "ndkFolder": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -138,8 +138,8 @@
         }
       ],
       "ndkMetaPlatforms": {
-        "min": 16,
-        "max": 30,
+        "min": 19,
+        "max": 33,
         "aliases": {
           "20": 19,
           "25": 24,
@@ -156,7 +156,10 @@
           "O-MR1": 27,
           "P": 28,
           "Q": 29,
-          "R": 30
+          "R": 30,
+          "S": 31,
+          "Sv2": 32,
+          "Tiramisu": 33
         }
       },
       "ndkSupportedAbiList": [
@@ -166,31 +169,31 @@
         "X86_64"
       ],
       "ndkDefaultStl": "LIBCXX_STATIC",
-      "ndkVersion": "21.3.6528147",
+      "ndkVersion": "25.2.9519653",
       "project": {
-        "compilerSettingsCacheFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\android\\.cxx",
-        "cxxFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\android\\.cxx",
+        "compilerSettingsCacheFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/android/.cxx",
+        "cxxFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/android/.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\android",
-        "sdkFolder": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk",
+        "rootBuildGradleFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/android",
+        "sdkFolder": "/Users/toilathor/Library/Android/sdk",
         "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "ARM64_V8A": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "X86": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "X86_64": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+          "ARMEABI_V7A": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       }
     },
-    "objFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\build\\ekyc_flutter_sdk\\intermediates\\cmake\\debug\\obj",
+    "objFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
       "ARMEABI_V7A",
@@ -198,8 +201,8 @@
       "X86",
       "X86_64"
     ],
-    "prefabDirectory": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\prefab",
+    "prefabDirectory": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\prefab\\x86_64"
+  "prefabFolder": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/prefab/x86_64"
 }

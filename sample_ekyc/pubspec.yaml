@@ -75,7 +75,7 @@ dependencies:
   video_player: ^2.4.7
   sample_sdk_flutter:
 #    path: /Volumes/Savis/HDSaiSon/sources/mobile-app/sdk_ekyc/sample_sdk_flutter
-    path: ../mobile-app/sdk_ekyc/sample_sdk_flutter
+    path: ../sample_ekyc/sdk_ekyc/sample_sdk_flutter
 
 dev_dependencies:
   flutter_driver:

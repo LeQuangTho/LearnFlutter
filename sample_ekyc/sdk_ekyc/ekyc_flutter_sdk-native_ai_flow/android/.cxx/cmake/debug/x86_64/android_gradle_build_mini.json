@@ -1,19 +1,21 @@
 {
   "buildFiles": [
-    "C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\CMakeLists.txt",
-    "C:\\Users\\tiennn\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
-    "C:\\Users\\tiennn\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake"
+    "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/CMakeLists.txt",
+    "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake",
+    "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake",
+    "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/platforms.cmake",
+    "/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/compiler_id.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64\" clean"
+    "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "convertImage-Debug-x86_64": {
       "artifactName": "convertImage",
-      "buildCommand": "C:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\x86_64\" convertImage",
+      "buildCommand": "/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/x86_64\" convertImage",
       "abi": "x86_64",
-      "output": "C:\\Users\\tiennn\\Documents\\mobile-app\\build\\ekyc_flutter_sdk\\intermediates\\cmake\\debug\\obj\\x86_64\\libconvertImage.so",
+      "output": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/x86_64/libconvertImage.so",
       "runtimeFiles": []
     }
   }

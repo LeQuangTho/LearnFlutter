@@ -16,8 +16,8 @@ CMAKE SERVER: {
     "major": 1,
     "minor": 1
   },
-  "sourceDirectory": "C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android",
-  "buildDirectory": "C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a",
+  "sourceDirectory": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android",
+  "buildDirectory": "/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a",
   "generator": "Ninja"
 }
 
@@ -37,17 +37,17 @@ CMAKE SERVER: {
   "type": "configure",
   "cacheArguments": [
     "",
-    "-DCMAKE_FIND_ROOT_PATH\u003dC:\\Users\\tiennn\\Documents\\mobile-app\\sdk_ekyc\\ekyc_flutter_sdk-native_ai_flow\\android\\.cxx\\cmake\\debug\\prefab\\armeabi-v7a\\prefab",
+    "-DCMAKE_FIND_ROOT_PATH\u003d/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/prefab/armeabi-v7a/prefab",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake",
     "-DANDROID_ABI\u003darmeabi-v7a",
-    "-DANDROID_NDK\u003dC:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147",
+    "-DANDROID_NDK\u003d/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653",
     "-DANDROID_PLATFORM\u003dandroid-21",
     "-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a",
-    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\ndk\\21.3.6528147",
+    "-DCMAKE_ANDROID_NDK\u003d/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\tiennn\\Documents\\mobile-app\\build\\ekyc_flutter_sdk\\intermediates\\cmake\\debug\\obj\\armeabi-v7a",
-    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\tiennn\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/armeabi-v7a",
+    "-DCMAKE_MAKE_PROGRAM\u003d/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_SYSTEM_VERSION\u003d21"
   ]
@@ -59,12 +59,68 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe","type":"message"}
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\n  CMakeLists.txt\n\n","title":"Warning","type":"message"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
-CMAKE SERVER: Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
-CMAKE SERVER: Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -77,12 +133,12 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works","type":"message"}
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works","type":"message"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
-CMAKE SERVER: Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
-CMAKE SERVER: Check for working C compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works
+CMAKE SERVER: Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+CMAKE SERVER: Check for working C compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -93,6 +149,34 @@ CMAKE SERVER: ]== "CMake Server" ==]
 
 CMAKE SERVER: Detecting C compiler ABI info
 CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -125,6 +209,34 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
 CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
@@ -133,9 +245,65 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
 CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
 CMAKE SERVER: 
 
@@ -159,12 +327,40 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe","type":"message"}
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++","type":"message"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
-CMAKE SERVER: Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
-CMAKE SERVER: Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe
+CMAKE SERVER: Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -177,12 +373,12 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works","type":"message"}
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works","type":"message"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
-CMAKE SERVER: Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
-CMAKE SERVER: Check for working CXX compiler: C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works
+CMAKE SERVER: Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+CMAKE SERVER: Check for working CXX compiler: /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -193,6 +389,34 @@ CMAKE SERVER: ]== "CMake Server" ==]
 
 CMAKE SERVER: Detecting CXX compiler ABI info
 CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
 CMAKE SERVER: 
 
 CMAKE SERVER: [== "CMake Server" ==[
@@ -225,9 +449,65 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
 CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
 CMAKE SERVER: 
 
@@ -241,9 +521,65 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
 CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake's built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+CMAKE SERVER: CMake Warning at /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
 
 CMAKE SERVER: 
 
@@ -330,7 +666,7 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","../../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","../../../../../AppData/Local/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake","../../../../../AppData/Local/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake","../../../../../AppData/Local/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"C:/Users/tiennn/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","type":"reply"}
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake","/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake","/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/platforms.cmake","/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/compiler_id.cmake","/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx",".cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"/Users/toilathor/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","type":"reply"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
@@ -344,7 +680,7 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"configurations":[{"name":"Debug","projects":[{"buildDirectory":"C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a","name":"Project","sourceDirectory":"C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","targets":[{"artifacts":["C:/Users/tiennn/Documents/mobile-app/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/armeabi-v7a/libconvertImage.so"],"buildDirectory":"C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC  ","defines":["convertImage_EXPORTS"],"isGenerated":false,"language":"C","sources":["../ios/Classes/converter.c"]}],"fullName":"libconvertImage.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments","linkLibraries":"-latomic -lm","linkerLanguage":"C","name":"convertImage","sourceDirectory":"C:/Users/tiennn/Documents/mobile-app/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","sysroot":"C:/Users/tiennn/AppData/Local/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+CMAKE SERVER: {"configurations":[{"name":"Debug","projects":[{"buildDirectory":"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a","name":"Project","sourceDirectory":"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","targets":[{"artifacts":["/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/build/ekyc_flutter_sdk/intermediates/cmake/debug/obj/armeabi-v7a/libconvertImage.so"],"buildDirectory":"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android/.cxx/cmake/debug/armeabi-v7a","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC  ","defines":["convertImage_EXPORTS"],"isGenerated":false,"language":"C","sources":["../ios/Classes/converter.c"]}],"fullName":"libconvertImage.so","linkFlags":"-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments","linkLibraries":"-latomic -lm","linkerLanguage":"C","name":"convertImage","sourceDirectory":"/Users/toilathor/DEV/toilathor/LearnFlutter/sample_ekyc/sdk_ekyc/ekyc_flutter_sdk-native_ai_flow/android","sysroot":"/Users/toilathor/Library/Android/sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
 
