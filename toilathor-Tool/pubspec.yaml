@@ -27,6 +27,7 @@ dependencies:
 
   # State management
   get: ^4.6.5
+  provider: ^6.0.5
   state_notifier: ^0.7.2+1
   flutter_state_notifier: ^0.7.3
 
