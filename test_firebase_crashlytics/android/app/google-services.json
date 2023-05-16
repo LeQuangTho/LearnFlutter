@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "933897497203",
+    "project_id": "test-savis",
+    "storage_bucket": "test-savis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933897497203:android:99774d2a3099bb2f611806",
+        "android_client_info": {
+          "package_name": "com.example.test_firebase_crashlytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933897497203-vmjqq7ibfk82i2fu3kajj9nt7roq7c5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeJ_zajmlZmkDmbbTcXv1OhSuyODxbhqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933897497203-vmjqq7ibfk82i2fu3kajj9nt7roq7c5k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "933897497203-gde7fktlvnau4m9l4qm71tfmfvfvvq72.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testFirebaseCrashlytics"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
