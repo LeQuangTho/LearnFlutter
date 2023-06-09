@@ -39,6 +39,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Spam SMS',
       theme: AppTheme.lightTheme,
       getPages: AppScreens.pages,
+      initialBinding: AppBindings(),
       home: const SendFromExcelScreen(),
     );
   }

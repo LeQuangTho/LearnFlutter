@@ -48,11 +48,11 @@ flutter_gen:
     flare_flutter: false
     rive: true
     lottie: true
-#  colors:
-#    inputs:
-#      - assets/color/colors.xml
-#    outputs:
-#      class_name: VTVColor
+  colors:
+    inputs:
+      - assets/color/colors.xml
+    outputs:
+      class_name: AppColor
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -78,3 +78,14 @@ flutter:
     - assets/
     - assets/icons/
     - assets/images/
+
+  fonts:
+    - family: Roboto-Medium
+      fonts:
+        - asset: assets/fonts/Roboto-Medium.ttf
+    - family: Roboto-Regular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Roboto-Bold
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
